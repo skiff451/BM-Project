@@ -1,6 +1,7 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.scss";
-import MainLayout from "../components/MainLayout"
+import MainLayout from "../components/MainLayout";
+import Promo from "../components/Promo";
 export default function Home() {
   return (
     <>
@@ -11,7 +12,7 @@ export default function Home() {
 
       <div className={styles.container}>
         <MainLayout>
-          <div className="">Hello</div>
+          <Promo />
         </MainLayout>
       </div>
     </>
