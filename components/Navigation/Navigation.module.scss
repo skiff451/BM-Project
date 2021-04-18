@@ -1,0 +1,14 @@
+.navigation {
+  margin: 0 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 517px;
+  align-items: center;
+  height: 100%;
+}
+
+@media (max-width: 460px) {
+  .navigation {
+    display: none;
+  }
+}

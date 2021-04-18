@@ -1,0 +1,47 @@
+.contactsH {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contactsV {
+  height: 4.167vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tel {
+  display: flex;
+  align-items: center;
+  margin-right: 21px;
+}
+
+.mail {
+  display: flex;
+  align-items: center;
+}
+
+.contactItem {
+  margin-left: 8px;
+}
+
+@media (max-width: 900px) {
+  .contactsH {
+    height: 4.167vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 620px) {
+  .contactsH {
+    display: none;
+  }
+  .contactsV {
+    display: none;
+  }
+}

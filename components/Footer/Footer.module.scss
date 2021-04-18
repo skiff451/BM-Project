@@ -1,0 +1,26 @@
+@import "../../styles/colors.scss";
+@import "../../styles/container.scss";
+
+.outer {
+  background: linear-gradient(88.55deg, #000000 0%, #014a7b 100%);
+}
+
+.inner {
+  min-height: 15.625vw;
+  display: flex;
+  align-items: center;
+}
+
+.footer {
+  width: 100%;
+  color: $white;
+  display: flex;
+  justify-content: space-between;
+
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.111vw;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+}

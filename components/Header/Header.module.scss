@@ -1,0 +1,22 @@
+@import "../../styles/colors.scss";
+@import "../../styles/container.scss";
+
+.inner {
+  min-height: 7.847vw;
+  display: flex;
+  align-items: center;
+}
+
+.header {
+  width: 100%;
+  color: $black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.111vw;
+  line-height: 19px;
+  letter-spacing: 0.02em;
+}
