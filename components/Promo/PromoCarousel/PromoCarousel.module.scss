@@ -1,0 +1,90 @@
+@import "../../../styles/container.scss";
+
+%pos {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.slide-content {
+  @extend %pos;
+  z-index: -1;
+}
+
+.wrapper {
+  @extend %pos;
+}
+
+.bullets-wrapper {
+  position: absolute;
+  bottom: 2.083vw;
+  left: calc(50% - 40px);
+}
+
+%btn-styles {
+  position: absolute;
+  top: 50%;
+  width: 30px;
+  height: 50px;
+  background: transparent;
+  border: none;
+  &:active,
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.left-btn {
+  left: 19px;
+  @extend %btn-styles;
+}
+
+.right-btn {
+  right: 19px;
+  @extend %btn-styles;
+}
+
+.bullet {
+  width: 1.389vw;
+  height: 0.417vw;
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 3px;
+  border: none;
+  margin-left: 4px;
+  &:active,
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+  &:disabled {
+    background: rgba(255, 255, 255, 0.9);
+  }
+}
+
+.title {
+  margin-top: 11.806vw;
+  font-style: normal;
+  font-weight: bold;
+  font-size: clamp(16px, 3.75vw, 56px);
+  line-height: 4.167vw;
+}
+
+
+
+.description {
+  width: 25.347vw;
+  margin-top: 3.472vw;
+  font-style: normal;
+  font-weight: normal;
+  font-size: clamp(6px, 1.25vw, 18px);
+  line-height: 2vw;
+  letter-spacing: 0.05em;
+}
+
