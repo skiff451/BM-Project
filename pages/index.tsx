@@ -9,7 +9,7 @@ import ProductCategoryItem from "../components/ProductCategoryItem";
 import styles from "../styles/Home.module.scss";
 
 export default function Home() {
-  const CategoryImgPath = "/../public/assets/product-category-img/";
+  const CategoryImgPath = "/assets/product-category-img/";
 
   return (
     <>
