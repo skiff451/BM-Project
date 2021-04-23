@@ -33,8 +33,8 @@ export default function Carousel() {
             layout="responsive"
           />
           <PromoContent>
-            <h1 className={styles.title}>Станки лазерной </h1>
-            <h2 className={styles.description}> 
+            <h1 className={styles.title}>Станки лазерной резки</h1>
+            <h2 className={styles.description}>
               Мы предлагаем качественную технику собсвенного производства с
               доставкой по Украине
             </h2>
@@ -48,6 +48,13 @@ export default function Carousel() {
             height={676}
             layout="responsive"
           />
+          <PromoContent>
+            <h1 className={styles.title}>Станки плазменой резки </h1>
+            <h2 className={styles.description}>
+              Мы предлагаем качественную технику собсвенного производства с
+              доставкой по Украине
+            </h2>
+          </PromoContent>
         </Slide>
         <Slide className="slide" index={2}>
           <Image
@@ -57,6 +64,13 @@ export default function Carousel() {
             height={676}
             layout="responsive"
           />
+          <PromoContent>
+            <h1 className={styles.title}>Станки мультигазовой резки </h1>
+            <h2 className={styles.description}>
+              Непревзойденное качество реза в комбинации со скоростью реза
+              относительно других методов резки
+            </h2>
+          </PromoContent>
         </Slide>
         <Slide className="slide" index={2}>
           <Image
@@ -66,6 +80,13 @@ export default function Carousel() {
             height={676}
             layout="responsive"
           />
+          <PromoContent>
+            <h1 className={styles.title}>Станки фрезерные </h1>
+            <h2 className={styles.description}>
+              Мы предлагаем качественную технику собсвенного производства с
+              доставкой по Украине
+            </h2>
+          </PromoContent>
         </Slide>
         <Slide className="slide" index={2}>
           <Image
@@ -75,16 +96,23 @@ export default function Carousel() {
             height={676}
             layout="responsive"
           />
+          <PromoContent>
+            <h1 className={styles.title}>Преса гибочные </h1>
+            <h2 className={styles.description}>
+              Мы предлагаем качественную технику собсвенного производства с
+              доставкой по Украине
+            </h2>
+          </PromoContent>
         </Slide>
       </Slider>
       <div className={styles.wrapper}>
         <div className={styles.container}>
           <div className={styles["bullets-wrapper"]}>
-            <Dot slide={0} className={styles.bullet}></Dot>
-            <Dot slide={1} className={styles.bullet}></Dot>
-            <Dot slide={2} className={styles.bullet}></Dot>
-            <Dot slide={3} className={styles.bullet}></Dot>
-            <Dot slide={4} className={styles.bullet}></Dot>
+            <Dot slide={0} className={styles.bullet} />
+            <Dot slide={1} className={styles.bullet} />
+            <Dot slide={2} className={styles.bullet} />
+            <Dot slide={3} className={styles.bullet} />
+            <Dot slide={4} className={styles.bullet} />
           </div>
 
           <ButtonBack className={styles["left-btn"]}>
