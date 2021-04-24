@@ -1,0 +1,103 @@
+@import "../../styles/colors.scss";
+
+.substrate {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  position: fixed;
+  background-color: $transparent-gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-form {
+  width: 38.403vw;
+  height: 37.431vw;
+  background-color: $white;
+  border-radius: 20px;
+  box-shadow: 7px 4px 78px 0px rgba(255, 98, 0, 0.2);
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4.861vw 5vw;
+  color: $black;
+}
+
+.title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.944vw;
+  line-height: 2.778vw;
+  text-align: center;
+}
+
+.subtitle {
+  margin: 10px 0 24px 0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.111vw;
+  line-height: 1.319vw;
+  text-align: center;
+}
+
+.restriction {
+  margin-top: 10px;
+  color: $minor-text-gray;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+%placeholder {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 23px;
+  color: $minor-text-gray;
+}
+
+%input-style {
+  border: none;
+  outline: none;
+  border-bottom: 1px solid $input-bottom-line;
+  padding: 7px 0;
+}
+
+%input-focus {
+  border-bottom: 1px solid $input-focus;
+}
+.input-block {
+  margin: 40px 0;
+  width: 403px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.long-input {
+  width: 403px;
+  @extend %input-style;
+  &::placeholder {
+    @extend %placeholder;
+  }
+  &:focus {
+    @extend %input-focus;
+  }
+}
+
+.short-input {
+  width: 188px;
+  @extend %input-style;
+  &::placeholder {
+    @extend %placeholder;
+  }
+  &:focus {
+    @extend %input-focus;
+  }
+}
