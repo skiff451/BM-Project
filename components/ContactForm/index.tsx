@@ -1,4 +1,6 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import classNames from "classnames";
+import Button from "../Button";
 import styles from "./ContactForm.module.scss";
 
 export default function ContactForm() {
@@ -7,14 +9,59 @@ export default function ContactForm() {
   const [email, setEmail] = useState("");
   const [comment, setComment] = useState("");
 
+  const [inputErr, setInputErr] = useState({
+    nameErr: false,
+    telErr: false,
+  });
+
+  const [formInfo, setFormInfo] = useState({
+    name: "",
+    tel: "",
+    email: "",
+    comment: "",
+  });
+
+  useEffect(() => {
+    setInputErr({
+      nameErr: false,
+      telErr: false,
+    });
+    setFormInfo({
+      name,
+      tel,
+      email,
+      comment,
+    });
+  }, [name, tel, email, comment]);
+
+  function onFormSubmit() {
+    const nameReg = /[А-Я]{4,20}/gi;
+    const telReg = /^[+]\d{2}[(]{0,1}[0-9]{3}[)]{0,1}\d{7}$/gi;
+
+    setInputErr({
+      nameErr: !!name.search(nameReg),
+      telErr: !!tel.search(telReg),
+    });
+  }
+
+  const nameErr = classNames(styles["long-input"], {
+    [styles.error]: inputErr.nameErr,
+  });
+
+  const telErr = classNames(styles["short-input"], {
+    [styles.error]: inputErr.telErr,
+  });
+
   return (
     <div className={styles.substrate}>
       <div className={styles["contact-form"]}>
         <div className={styles["wrapper"]}>
           <span className={styles.title}>Нужна консультация?</span>
-          <span className={styles.subtitle}>Оставьте свои данные и мы перезвоним</span>
+          <span className={styles.subtitle}>
+            Оставьте свои данные и мы перезвоним
+          </span>
           <input
-            className={styles["long-input"]}
+            className={nameErr}
             type="text"
             placeholder="Введите имя *"
             value={name}
@@ -24,9 +71,9 @@ export default function ContactForm() {
           />
           <div className={styles["input-block"]}>
             <input
-              className={styles["short-input"]}
+              className={ telErr}
               type="tel"
-              placeholder="Введите телефон *"
+              placeholder="+38(099)1234567 *"
               value={tel}
               onChange={(e) => {
                 setTel(e.target.value);
@@ -35,7 +82,7 @@ export default function ContactForm() {
             <input
               className={styles["short-input"]}
               type="email"
-              placeholder="Введите e-mail"
+              placeholder="example@gmail.com"
               value={email}
               onChange={(e) => {
                 setEmail(e.target.value);
@@ -54,6 +101,7 @@ export default function ContactForm() {
           <span className={styles.restriction}>
             *Поля отмеченные звездочкой являются обязательными к заполнению
           </span>
+          <Button onClick={() => onFormSubmit}>Отправить</Button>
         </div>
       </div>
     </div>
