@@ -17,6 +17,7 @@ export default function ContactForm({
   subtitle,
   style,
 }: ContactFormProps) {
+ 
   const [name, setName] = useState("");
   const [tel, setTel] = useState("");
   const [email, setEmail] = useState("");
@@ -33,6 +34,8 @@ export default function ContactForm({
     email: "",
     comment: "",
   });
+
+  
 
   useEffect(() => {
     setInputErr({
@@ -67,6 +70,7 @@ export default function ContactForm({
 
   return (
     <div className={style.substrate}
+      onClick={()=>{}}
     >
       <div className={style.form}>
         <div className={styles["wrapper"]}>
