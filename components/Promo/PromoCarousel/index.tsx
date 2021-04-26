@@ -10,6 +10,8 @@ import {
 import PromoContent from "./PromoContent";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import styles from "./PromoCarousel.module.scss";
+import React from "react";
+import Button from "../../Button";
 
 export default function Carousel() {
   return (
@@ -18,7 +20,7 @@ export default function Carousel() {
       naturalSlideHeight={676}
       totalSlides={5}
       isPlaying
-      interval={2500}
+      interval={4500}
       infinite
       visibleSlides={1}
       touchEnabled
@@ -122,6 +124,16 @@ export default function Carousel() {
           <ButtonNext className={styles["right-btn"]}>
             <img src="/assets/slider-arrows/right.svg" alt="r" />
           </ButtonNext>
+          <div className={styles.order}>
+            <Button
+              responsive
+              onClick={() => () => {
+                console.log("Click");
+              }}
+            >
+              Заказать звонок
+            </Button>
+          </div>
         </div>
       </div>
     </CarouselProvider>

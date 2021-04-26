@@ -1,32 +1,32 @@
-@import "./colors.scss";
+// @import "./colors.scss";
 
-.substrate {
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  position: fixed;
-  background-color: $transparent-gray;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+// .substrate {
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   bottom: 0;
+//   position: fixed;
+//   background-color: $transparent-gray;
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+// }
 
-.contact-form {
-  width: 553px;
-  height: 559px;
-  background-color: $white;
-  border-radius: 20px;
-  box-shadow: 7px 4px 78px 0px rgba(255, 98, 0, 0.2);
-}
+// .contact-form {
+//   width: 553px;
+//   height: 559px;
+//   background-color: $white;
+//   border-radius: 20px;
+//   box-shadow: 7px 4px 78px 0px rgba(255, 98, 0, 0.2);
+// }
 
-@media (max-width: 600px) {
-  .substrate {
-    align-items: start;
-  }
-
-//   .contact-form {
-//     margin-top: 100px;
-//     width: 95%;
+// @media (max-width: 600px) {
+//   .substrate {
+//     align-items: start;
 //   }
-}
+
+// //   .contact-form {
+// //     margin-top: 100px;
+// //     width: 95%;
+// //   }
+// }

@@ -1,19 +1,28 @@
 @import "../../styles/colors.scss";
 
-.btn {
+.responsive {
+  width: 15.139vw;
+  height: 4.167vw;
+  font-size: 1.25vw;
+}
+
+.static {
   width: 218px;
   height: 60px;
-  border:none;
+  font-size: 18px;
+}
+
+.btn {
+  border: none;
   border-radius: 4px;
   background-color: $orange;
-
   font-style: normal;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 21px;
   color: $white;
+
   &:hover {
     background-color: $orange-hover;
     box-shadow: 4px 6px 50px rgba(251, 42, 0, 0.3);
+    cursor: pointer;
   }
 }
