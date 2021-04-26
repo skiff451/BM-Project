@@ -2,13 +2,12 @@ import Head from "next/head";
 import MainLayout from "../components/MainLayout";
 import Promo from "../components/Promo";
 import Category from "../components/Category";
+import WhyUs from "../components/WhyUs";
 
 import styles from "../styles/Home.module.scss";
 
 
 export default function Home() {
-  
-
   return (
     <>
       <Head>
@@ -23,6 +22,7 @@ export default function Home() {
       <div className={styles.container}>
         <MainLayout>
           <Promo />
+          <WhyUs />
           <Category />
         </MainLayout>
       </div>
