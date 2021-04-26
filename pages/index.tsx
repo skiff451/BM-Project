@@ -3,6 +3,7 @@ import MainLayout from "../components/MainLayout";
 import Promo from "../components/Promo";
 import Category from "../components/Category";
 import WhyUs from "../components/WhyUs";
+import ConsultForm from "../components/ConsultForm"
 
 import styles from "../styles/Home.module.scss";
 
@@ -24,6 +25,7 @@ export default function Home() {
           <Promo />
           <WhyUs />
           <Category />
+          <ConsultForm/>
         </MainLayout>
       </div>
     </>
