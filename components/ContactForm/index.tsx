@@ -17,9 +17,8 @@ export default function ContactForm({
   subtitle,
   style,
 }: ContactFormProps) {
+  const [modal, setModal] = useState(true);
 
-  const [openModal, setOpenModal] = useState(false)
- 
   const [name, setName] = useState("");
   const [tel, setTel] = useState("");
   const [email, setEmail] = useState("");
@@ -37,10 +36,7 @@ export default function ContactForm({
     comment: "",
   });
 
-  useEffect(() => {
-    
-  },[])
-
+  useEffect(() => {}, [modal]);
 
   useEffect(() => {
     setInputErr({
@@ -73,9 +69,12 @@ export default function ContactForm({
     [styles.error]: inputErr.telErr,
   });
 
-  return (
-    <div className={style.substrate}
-      onClick={()=>{}}
+  return modal ? (
+    <div
+      className={style.substrate}
+      onClick={() => {
+        setModal(false);
+      }}
     >
       <div className={style.form}>
         <div className={styles["wrapper"]}>
@@ -127,5 +126,5 @@ export default function ContactForm({
         </div>
       </div>
     </div>
-  );
+  ) : null;
 }
