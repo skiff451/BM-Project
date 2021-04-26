@@ -1,13 +1,21 @@
+import { useState } from "react";
 import PromoCarousel from "./PromoCarousel";
+import ContactFormModal from "../ContactFormModal";
 
 import styles from "./Promo.module.scss";
 
+
 export default function Promo() {
+  const [openModal, setOpenModal] = useState(false)
+   
   return (
-    <div className={styles.outer}>
-      <div className={styles.inner}>
-        <PromoCarousel />
+    <>
+      <div className={styles.outer}>
+        <div className={styles.inner}>
+          <PromoCarousel openModal={setOpenModal}/>
+        </div>
       </div>
-    </div>
+      <ContactFormModal open={openModal} setOpen={setOpenModal }/>
+    </>
   );
 }

@@ -1,18 +1,25 @@
-import { useState } from "react";
+import { Dispatch, SetStateAction } from "react";
 import ContactForm from "../ContactForm";
 import styles from "./ContactFormModal.module.scss";
 
-export default function ContactFormModal() {
-  const [modal, setModal] = useState(false);
+interface ContactFormModalProps {
+  open: boolean;
+  setOpen: Dispatch<SetStateAction<boolean>>;
+}
 
-  return modal ? (
+export default function ContactFormModal({
+  open,
+  setOpen,
+}: ContactFormModalProps) {
+  
+  return open ? (
     <div
       id="substrate"
       className={styles.substrate}
       onClick={(e) => {
         const div = e.target as HTMLDivElement;
         if (div.id === "substrate") {
-          setModal(false);
+          setOpen(false);
         }
       }}
     >

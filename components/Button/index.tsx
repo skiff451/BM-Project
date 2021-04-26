@@ -5,7 +5,7 @@ import classNames from "classnames";
 interface ButtonProps {
   children: string;
   responsive?: boolean;
-  onClick: () => MouseEventHandler<HTMLButtonElement> | undefined;
+  onClick: MouseEventHandler<HTMLButtonElement>;
 }
 export default function Button({ children, responsive ,onClick }: ButtonProps) {
  
@@ -14,10 +14,8 @@ export default function Button({ children, responsive ,onClick }: ButtonProps) {
     [styles.static]: !responsive
   });
 
-  
- 
   return (
-    <button className={btnStyles} onClick={onClick()}>
+    <button className={btnStyles} onClick={ onClick } >
       {children}
     </button>
   );

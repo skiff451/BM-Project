@@ -110,7 +110,7 @@ export default function ContactForm({
         <span className={styles.restriction}>
           *Поля отмеченные звездочкой являются обязательными к заполнению
         </span>
-        <Button onClick={() => onFormSubmit}>Отправить</Button>
+        <Button onClick={onFormSubmit}>Отправить</Button>
       </div>
     </div>
   );

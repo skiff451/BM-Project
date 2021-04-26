@@ -10,10 +10,14 @@ import {
 import PromoContent from "./PromoContent";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import styles from "./PromoCarousel.module.scss";
-import React from "react";
+import React, { Dispatch, SetStateAction } from "react";
 import Button from "../../Button";
 
-export default function Carousel() {
+interface CarouselProps{
+  openModal: Dispatch<SetStateAction<boolean>>
+}
+
+export default function Carousel({openModal}:CarouselProps) {
   return (
     <CarouselProvider
       naturalSlideWidth={1440}
@@ -127,9 +131,7 @@ export default function Carousel() {
           <div className={styles.order}>
             <Button
               responsive
-              onClick={() => () => {
-                console.log("Click");
-              }}
+              onClick={()=>{openModal(true)}}
             >
               Заказать звонок
             </Button>
