@@ -66,12 +66,14 @@ export default function ContactForm({
   });
 
   return (
-    <div className={style.substrate}>
+    <div className={style.substrate}
+    >
       <div className={style.form}>
         <div className={styles["wrapper"]}>
           <span className={styles.title}>{title}</span>
           <span className={styles.subtitle}>{subtitle}</span>
           <input
+            autoFocus={false}
             className={nameErr}
             type="text"
             placeholder="Введите имя *"
