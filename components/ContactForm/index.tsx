@@ -17,6 +17,8 @@ export default function ContactForm({
   subtitle,
   style,
 }: ContactFormProps) {
+
+  const [openModal, setOpenModal] = useState(false)
  
   const [name, setName] = useState("");
   const [tel, setTel] = useState("");
@@ -35,7 +37,7 @@ export default function ContactForm({
     comment: "",
   });
 
-  
+
 
   useEffect(() => {
     setInputErr({
