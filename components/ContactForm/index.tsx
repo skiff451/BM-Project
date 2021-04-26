@@ -37,6 +37,9 @@ export default function ContactForm({
     comment: "",
   });
 
+  useEffect(() => {
+    
+  },[])
 
 
   useEffect(() => {
