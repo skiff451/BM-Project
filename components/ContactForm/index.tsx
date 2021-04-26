@@ -3,7 +3,20 @@ import classNames from "classnames";
 import Button from "../Button";
 import styles from "./ContactForm.module.scss";
 
-export default function ContactForm() {
+interface ContactFormProps {
+  title: string;
+  subtitle: string;
+  style: {
+    substrate: string;
+    form: string;
+  };
+}
+
+export default function ContactForm({
+  title,
+  subtitle,
+  style,
+}: ContactFormProps) {
   const [name, setName] = useState("");
   const [tel, setTel] = useState("");
   const [email, setEmail] = useState("");
@@ -53,13 +66,11 @@ export default function ContactForm() {
   });
 
   return (
-    <div className={styles.substrate}>
-      <div className={styles["contact-form"]}>
+    <div className={style.substrate}>
+      <div className={style.form}>
         <div className={styles["wrapper"]}>
-          <span className={styles.title}>Нужна консультация?</span>
-          <span className={styles.subtitle}>
-            Оставьте свои данные и мы перезвоним
-          </span>
+          <span className={styles.title}>{title}</span>
+          <span className={styles.subtitle}>{subtitle}</span>
           <input
             className={nameErr}
             type="text"
@@ -71,7 +82,7 @@ export default function ContactForm() {
           />
           <div className={styles["input-block"]}>
             <input
-              className={ telErr}
+              className={telErr}
               type="tel"
               placeholder="+38(099)1234567 *"
               value={tel}
@@ -82,7 +93,7 @@ export default function ContactForm() {
             <input
               className={styles["short-input"]}
               type="email"
-              placeholder="example@gmail.com"
+              placeholder="Введите e-mail"
               value={email}
               onChange={(e) => {
                 setEmail(e.target.value);
