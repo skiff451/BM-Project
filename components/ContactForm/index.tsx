@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
-import classNames from "classnames";
 import Button from "../Button";
+import formStyles from "./contactModalStyles";
 import styles from "./ContactForm.module.scss";
 
 interface ContactFormProps {
@@ -59,52 +59,16 @@ export default function ContactForm({
     });
   }
 
-  const nameInputStyle = classNames(styles["long-input"], {
-    [styles.error]: inputErr.nameErr,
-    [styles["input-light"]]: version === "light",
-    [styles["input-dark"]]: version === "dark",
-    // [styles.center]: centerPos,
-  });
-
-  const telInputStyle = classNames(styles["short-input"], {
-    [styles.error]: inputErr.telErr,
-    [styles["input-light"]]: version === "light",
-    [styles["input-dark"]]: version === "dark",
-    // [styles.center]: centerPos,
-  });
-
-  const longInputStyle = classNames(styles["long-input"], {
-    [styles["input-light"]]: version === "light",
-    [styles["input-dark"]]: version === "dark",
-    // [styles.center]: centerPos,
-  });
-
-  const shortInputStyle = classNames(styles["short-input"], {
-    [styles["input-light"]]: version === "light",
-    [styles["input-dark"]]: version === "dark",
-    // [styles.center]: centerPos,
-  });
-
-  const titleStyle = classNames(styles.title, {
-    [styles.light]: version === "light",
-    [styles.dark]: version === "dark",
-    [styles.center]: centerPos,
-  });
-
-  const subTitleStyle = classNames(styles.subtitle, {
-    [styles.light]: version === "light",
-    [styles.dark]: version === "dark",
-    [styles.center]: centerPos,
-  });
-
-  const restrictionStyle = classNames(styles.restriction, {
-    [styles.light]: version === "light",
-    [styles.dark]: version === "dark",
-  });
-
-  const wrapperStyle = classNames(styles["wrapper"], {
-    [styles.center]: centerPos,
-  });
+  const {
+    nameInputStyle,
+    telInputStyle,
+    longInputStyle,
+    shortInputStyle,
+    titleStyle,
+    subTitleStyle,
+    restrictionStyle,
+    wrapperStyle,
+  } = formStyles(version, centerPos, inputErr);
 
   return (
     <div className={style.form}>

@@ -1,3 +1,4 @@
+import React, { Dispatch, SetStateAction } from "react";
 import Image from "next/image";
 import {
   CarouselProvider,
@@ -7,11 +8,11 @@ import {
   ButtonBack,
   ButtonNext,
 } from "pure-react-carousel";
+import Button from "../../Button";
 import PromoContent from "./PromoContent";
+
 import "pure-react-carousel/dist/react-carousel.es.css";
 import styles from "./PromoCarousel.module.scss";
-import React, { Dispatch, SetStateAction } from "react";
-import Button from "../../Button";
 
 interface CarouselProps{
   openModal: Dispatch<SetStateAction<boolean>>
