@@ -1,19 +1,19 @@
 import Image from "next/image";
-
+import styles from "./ProductItem.module.scss";
 interface ProductItemProps {
   imgName: string;
   altText: string;
-  text: string;
-  link: string;
+  productName: string;
+  link?: string;
 }
 
 export default function ProductItem({
   imgName,
   altText,
-  text,
+  productName,
 }: ProductItemProps) {
   return (
-    <div>
+    <div className={styles.item}>
       <Image
         src={`/assets/products-imgs/${imgName}`}
         alt={altText}
@@ -21,7 +21,10 @@ export default function ProductItem({
         height={214}
         layout="responsive"
       />
-      <p>{text}</p>
+      <div className={styles.wrapper}>
+        <p className={styles["product-name"]}>{productName}</p>
+        <span className={styles.details}>Подробнее...</span>
+      </div>
     </div>
   );
 }

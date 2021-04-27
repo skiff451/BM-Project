@@ -3,11 +3,10 @@ import MainLayout from "../components/MainLayout";
 import Promo from "../components/Promo";
 import Category from "../components/Category";
 import WhyUs from "../components/WhyUs";
-import ConsultForm from "../components/ConsultForm"
+import ConsultForm from "../components/ConsultForm";
 
 import styles from "../styles/Home.module.scss";
 import PopularProducts from "../components/PopularProducts";
-
 
 export default function Home() {
   return (
@@ -19,7 +18,10 @@ export default function Home() {
           name="viewport"
           content="width=device-width, initial-scale=1, maximum-scale=1"
         />
-        <meta name="google-site-verification" content="Y0yL7YaTBuU7T1xrHe-zjHaVePWsrIt7KIQUMPNjKrk" />
+        <meta
+          name="google-site-verification"
+          content="Y0yL7YaTBuU7T1xrHe-zjHaVePWsrIt7KIQUMPNjKrk"
+        />
       </Head>
 
       <div className={styles.container}>
@@ -28,7 +30,7 @@ export default function Home() {
           <WhyUs />
           <Category />
           <ConsultForm />
-          <PopularProducts/>
+          <PopularProducts />
         </MainLayout>
       </div>
     </>
