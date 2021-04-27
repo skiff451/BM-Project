@@ -3,14 +3,14 @@ import styles from "./ProductItem.module.scss";
 interface ProductItemProps {
   imgName: string;
   altText: string;
-  productName: string;
+  name: string;
   link?: string;
 }
 
 export default function ProductItem({
   imgName,
   altText,
-  productName,
+  name: productName,
 }: ProductItemProps) {
   return (
     <div className={styles.item}>

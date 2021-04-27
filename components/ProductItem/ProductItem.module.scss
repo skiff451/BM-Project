@@ -1,9 +1,8 @@
 @import "../../styles/colors.scss";
 
 .item {
-  margin: 5px;
-  width: 297px;
-  height: 357px;
+  width: 246px;
+  height: 307px;
   background: $white;
   box-shadow: 2px 4px 20px 2px rgba(206, 206, 206, 0.25);
   border-radius: 10px;
@@ -20,16 +19,16 @@
   padding: 0 30px;
 }
 .product-name {
-  margin-top: 18px;
+  margin-top: 6px;
+  margin-bottom: 10px;
   font-style: normal;
   font-weight: bold;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 24px;
   color: $black;
 }
 
 .details {
-  margin-top: 15px;
   font-style: normal;
   font-weight: normal;
   font-size: 14px;
