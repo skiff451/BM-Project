@@ -6,6 +6,8 @@ import styles from "./ContactForm.module.scss";
 interface ContactFormProps {
   title: string;
   subtitle: string;
+  version?: "dark" | "light";
+  centerPos?: boolean;
   style: {
     form: string;
   };
@@ -14,6 +16,8 @@ interface ContactFormProps {
 export default function ContactForm({
   title,
   subtitle,
+  version = "light",
+  centerPos = true,
   style,
 }: ContactFormProps) {
   const [name, setName] = useState("");
@@ -55,22 +59,61 @@ export default function ContactForm({
     });
   }
 
-  const nameErr = classNames(styles["long-input"], {
+  const nameInputStyle = classNames(styles["long-input"], {
     [styles.error]: inputErr.nameErr,
+    [styles["input-light"]]: version === "light",
+    [styles["input-dark"]]: version === "dark",
+    // [styles.center]: centerPos,
   });
 
-  const telErr = classNames(styles["short-input"], {
+  const telInputStyle = classNames(styles["short-input"], {
     [styles.error]: inputErr.telErr,
+    [styles["input-light"]]: version === "light",
+    [styles["input-dark"]]: version === "dark",
+    // [styles.center]: centerPos,
+  });
+
+  const longInputStyle = classNames(styles["long-input"], {
+    [styles["input-light"]]: version === "light",
+    [styles["input-dark"]]: version === "dark",
+    // [styles.center]: centerPos,
+  });
+
+  const shortInputStyle = classNames(styles["short-input"], {
+    [styles["input-light"]]: version === "light",
+    [styles["input-dark"]]: version === "dark",
+    // [styles.center]: centerPos,
+  });
+
+  const titleStyle = classNames(styles.title, {
+    [styles.light]: version === "light",
+    [styles.dark]: version === "dark",
+    [styles.center]: centerPos,
+  });
+
+  const subTitleStyle = classNames(styles.subtitle, {
+    [styles.light]: version === "light",
+    [styles.dark]: version === "dark",
+    [styles.center]: centerPos,
+  });
+
+  const restrictionStyle = classNames(styles.restriction, {
+    [styles.light]: version === "light",
+    [styles.dark]: version === "dark",
+  });
+
+  const wrapperStyle = classNames(styles["wrapper"], {
+    [styles.center]: centerPos,
   });
 
   return (
     <div className={style.form}>
-      <div className={styles["wrapper"]}>
-        <span className={styles.title}>{title}</span>
-        <span className={styles.subtitle}>{subtitle}</span>
+      <div className={wrapperStyle}>
+        <span className={titleStyle}>{title}</span>
+        <span className={subTitleStyle}>{subtitle}</span>
         <input
           autoFocus={false}
-          className={nameErr}
+          className={nameInputStyle}
           type="text"
           placeholder="Введите имя *"
           value={name}
@@ -80,7 +123,7 @@ export default function ContactForm({
         />
         <div className={styles["input-block"]}>
           <input
-            className={telErr}
+            className={telInputStyle}
             type="tel"
             placeholder="+38(099)1234567 *"
             value={tel}
@@ -89,7 +132,7 @@ export default function ContactForm({
             }}
           />
           <input
-            className={styles["short-input"]}
+            className={shortInputStyle}
             type="email"
             placeholder="Введите e-mail"
             value={email}
@@ -100,14 +143,14 @@ export default function ContactForm({
         </div>
 
         <textarea
-          className={styles["long-input"]}
+          className={longInputStyle}
           placeholder="Оставить комментарий"
           value={comment}
           onChange={(e) => {
             setComment(e.target.value);
           }}
         />
-        <span className={styles.restriction}>
+        <span className={restrictionStyle}>
           *Поля отмеченные звездочкой являются обязательными к заполнению
         </span>
         <Button onClick={onFormSubmit}>Отправить</Button>

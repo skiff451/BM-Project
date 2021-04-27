@@ -1,11 +1,46 @@
 @import "../../styles/colors.scss";
 
+.light {
+  color: $black;
+}
+
+.dark {
+  color: $white;
+}
+
+.input-light {
+  color: $black;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid $black;
+  &::placeholder {
+    color: $minor-text-gray;
+  }
+}
+
+.input-dark {
+  color: $white;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid $white;
+  &::placeholder {
+    color: $white-transparent;
+  }
+}
+
+.center {
+  align-items: center;
+  text-align: center;
+}
+
+.left-side {
+  align-items: flex-start;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
-  align-items: center;
   padding: 70px 72px;
-  color: $black;
 }
 
 .title {
@@ -13,7 +48,6 @@
   font-weight: bold;
   font-size: 28px;
   line-height: 40px;
-  text-align: center;
 }
 
 .subtitle {
@@ -22,17 +56,14 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 19px;
-  text-align: center;
 }
 
 .restriction {
   margin: 10px 0 52px 0;
-  color: $minor-text-gray;
   font-style: normal;
   font-weight: 300;
   font-size: 12px;
   line-height: 14px;
-  text-align: center;
 }
 
 %placeholder {
@@ -41,14 +72,11 @@
   font-weight: 300;
   font-size: 14px;
   line-height: 23px;
-  color: $minor-text-gray;
 }
 
 %input-style {
-  border: none;
-  outline: none;
-  border-bottom: 1px solid $input-bottom-line;
   padding: 7px 0;
+  background: transparent;
 }
 
 %input-focus {
@@ -85,7 +113,6 @@
 
 .error {
   background-color: $input-error;
-  border-radius: 3px;
   animation: shakeX 0.82s cubic-bezier(0.35, 0.08, 0.2, 0.95) both;
   transform: translateX(0);
 }
@@ -112,5 +139,3 @@
     transform: translateX(4px);
   }
 }
-
-

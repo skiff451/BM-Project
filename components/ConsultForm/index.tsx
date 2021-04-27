@@ -9,7 +9,9 @@ export default function ConsultForm() {
           <div className={styles.group}>
           <ContactForm
         title="Нужна консультация?"
-        subtitle="Оставьте свои данные и мы перезвоним"
+          subtitle="Оставьте свои данные и мы перезвоним"
+          version="dark"
+          centerPos={false}
         style={{
           form: styles["contact-form"],
         }}

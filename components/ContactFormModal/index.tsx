@@ -1,4 +1,4 @@
-import { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction, useEffect } from "react";
 import ContactForm from "../ContactForm";
 import styles from "./ContactFormModal.module.scss";
 
@@ -12,6 +12,17 @@ export default function ContactFormModal({
   setOpen,
 }: ContactFormModalProps) {
   
+  useEffect(() => {
+    const scroll = () => {
+      window.scrollTo(0, 0);
+    };
+    if (open) window.addEventListener("scroll", scroll);
+
+    return () => {
+      window.removeEventListener("scroll", scroll);
+    };
+  }, [open]);
+
   return open ? (
     <div
       id="substrate"
