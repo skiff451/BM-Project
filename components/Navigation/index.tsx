@@ -7,6 +7,7 @@ export default function Navigation() {
       <NavItem name="О компании" path="/about-us" />
       <NavItem name="Продукция" path="/products" />
       <NavItem name="Контакты" path="/contacts" />
+      <NavItem name="Галерея" path="/gallery" />
       <NavItem name="О станках" path="/machine-tools" />
     </div>
   );

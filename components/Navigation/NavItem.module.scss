@@ -1,0 +1,12 @@
+@import "../../styles/colors.scss";
+
+.nav-item {
+  margin: 0 5px;
+  
+  font-size: 14px;
+  
+  
+  &:hover {
+    color: $orange;
+  }
+}

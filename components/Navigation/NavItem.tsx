@@ -1,5 +1,7 @@
 import Link from "next/link";
 
+import styles from "./NavItem.module.scss";
+
 interface NavItemProps {
   name: string;
   path: string;
@@ -11,13 +13,8 @@ export default function NavItem(props: NavItemProps) {
   return (
     <>
       <Link href={path}>
-        <a className="nav-item">{name}</a>
+        <a className={styles["nav-item"]}>{name}</a>
       </Link>
-      <style jsx>{`
-        .nav-item {
-          margin: 0 5px;
-        }
-      `}</style>
     </>
   );
 }
