@@ -27,7 +27,7 @@ export default function Contacts(props: ContactsProps) {
             }
           `}</style>
         </>
-        <a className={styles.contactItem} href={`tel:+${tel}`}>
+        <a className={styles.contactItem} href={`tel:${tel}`}>
           {tel}
         </a>
       </div>

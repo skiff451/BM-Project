@@ -7,6 +7,7 @@ import ConsultForm from "../components/ConsultForm";
 
 import styles from "../styles/Home.module.scss";
 import PopularProducts from "../components/PopularProducts";
+import CallButton from "../components/CallButton";
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
 
       <div className={styles.container}>
         <MainLayout>
+          <CallButton tel="+380507108908"/>
           <Promo />
           <WhyUs />
           <Category />

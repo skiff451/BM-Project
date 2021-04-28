@@ -1,0 +1,19 @@
+@import "../../styles/colors.scss";
+
+.phone-btn {
+  position: fixed;
+  right: 80px;
+  bottom: 129px;
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  background-color: $orange;
+  z-index: 100500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &:hover{
+    background: $orange-hover;
+    box-shadow: 4px 6px 50px rgba(251, 42, 0, 0.3);
+  }
+}
