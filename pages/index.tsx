@@ -23,23 +23,38 @@ export default function Home({ data }: IData) {
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=5"
+          content="width=device-width, initial-scale=1, maximum-scale=3"
         />
         <meta
           name="google-site-verification"
           content="Y0yL7YaTBuU7T1xrHe-zjHaVePWsrIt7KIQUMPNjKrk"
         />
+
+        <meta
+          name="keywords"
+          content="станки, станки плазменной резки, станки лазерной резки, 
+          станки мультигазовой резки, фрезерные станки, преса гибочные, ЧПУ,
+          высокое качество станков, промышленные станки"
+        />
+        <meta
+          name="description"
+          content="станки, станки плазменной резки, станки лазерной резки, 
+          станки мультигазовой резки, фрезерные станки, преса гибочные, ЧПУ,
+          высокое качество станков, промышленные станки,
+          Мы лучшая компания которая занимается продажей станков лазерной, мультигазовой, плазменной резки
+          "
+        ></meta>
         <link rel="apple-touch-icon" href="/apple-ico.png"></link>
       </Head>
 
       <div className={styles.container}>
         <MainLayout>
-          <CallButton tel="+380507108908" />
           <Promo />
           <WhyUs />
           <Category />
           <ConsultForm />
           <PopularProducts />
+          <CallButton tel="+380507108908" />
         </MainLayout>
       </div>
     </>
