@@ -13,7 +13,7 @@ export default function Category() {
         <div className={styles["flex-wrapp"]}>
           <ProductCategoryItem
             title="Станки лазерной резки"
-            path="laser-cutting-machine"
+            path="category/1"
           >
             <Image
               src={`${CategoryImgPath}laser-cutting-machine.png`}

@@ -9,11 +9,16 @@ import styles from "../styles/Home.module.scss";
 import PopularProducts from "../components/PopularProducts";
 import CallButton from "../components/CallButton";
 
-export default function Home() {
+interface IData {
+  data: IDataFetched;
+}
+
+export default function Home({ data }: IData) {
+  console.log(data);
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>LaserBm</title>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="viewport"
@@ -27,7 +32,7 @@ export default function Home() {
 
       <div className={styles.container}>
         <MainLayout>
-          <CallButton tel="+380507108908"/>
+          <CallButton tel="+380507108908" />
           <Promo />
           <WhyUs />
           <Category />
@@ -38,3 +43,14 @@ export default function Home() {
     </>
   );
 }
+
+// export async function getStaticProps() {
+//   // const res = await fetch("/api/data");
+//   // const data: IDataFetched = await res.json();
+
+//   return {
+//     props: {
+//       data,
+//     },
+//   };
+// }

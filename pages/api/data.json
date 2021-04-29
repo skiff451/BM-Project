@@ -1,0 +1,157 @@
+{
+    "name": "Наша продукция",
+    "category": [
+        {
+            "id": 1,
+            "name": "Станки лазерной резки",
+            "enable": true,
+            "description": "",
+            "subCategory": [
+                {
+                    "id": 1,
+                    "name": "first subcategory",
+                    "enable": true,
+                    "products": [
+                        {
+                            "id": 1,
+                            "name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
+                            " img": "product_1.png",
+                            "altText": "",
+                            "link": ""
+                        },
+                        {
+                            "id": 2,
+                            "name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
+                            "img": "product_2.png",
+                            "altText": ""
+                        },
+                        {
+                            " id": 3,
+                            "name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
+                            "img": "product_3.png",
+                            "altText": ""
+                        },
+                        {
+                            "id": 4,
+                            "name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
+                            "img": "product_4.png",
+                            "altText": ""
+                        },
+                        {
+                            "id": 5,
+                            "name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
+                            "img": "product_1.png",
+                            "altText": ""
+                        },
+                        {
+                            "id": 6,
+                            " name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
+                            "img": "product_2.png",
+                            "altText": ""
+                        },
+                        {
+                            "id": 7,
+                            "name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
+                            "img": "product_3.png",
+                            "altText": ""
+                        },
+                        {
+                            "id": 8,
+                            "name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
+                            "img": "product_4.png",
+                            "altText": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 2,
+            "name": "Станки мультигазовой резки",
+            "enable": true,
+            "description": "",
+            "subCategory": [
+                {
+                    "id": 1,
+                    "name": "first subcategory",
+                    "enable": true,
+                    "products": [
+                        {
+                            "id": 1,
+                            "name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
+                            " img": "product_1.png",
+                            "altText": "",
+                            "link": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "name": "Станки плазменной резки",
+            "enable": true,
+            "description": "",
+            "subCategory": [
+                {
+                    "id": 1,
+                    "name": "first subcategory",
+                    "enable": true,
+                    "products": [
+                        {
+                            "id": 1,
+                            "name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
+                            "img": "product_1.png",
+                            "altText": "",
+                            "link": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            " id": 4,
+            " name": "Преса гибочные",
+            "enable": true,
+            "description": "",
+            "subCategory": [
+                {
+                    "id": 1,
+                    " name": "first subcategory",
+                    "enable": true,
+                    "products": [
+                        {
+                            " id": 1,
+                            "name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
+                            "img": "product_1.png",
+                            "altText": "",
+                            "link": ""
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "id": 5,
+            " name": "Станки фрезерные",
+            " enable": true,
+            "description": "",
+            "subCategory": [
+                {
+                    "id": 1,
+                    "name": "first subcategory",
+                    "enable": true,
+                    "products": [
+                        {
+                            "id": 1,
+                            "name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
+                            "img": "product_1.png",
+                            "altText": "",
+                            "link": ""
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}
