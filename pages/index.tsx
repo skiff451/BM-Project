@@ -18,16 +18,18 @@ export default function Home({ data }: IData) {
   return (
     <>
       <Head>
+        <html lang="ru" />
         <title>LaserBm</title>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=1"
+          content="width=device-width, initial-scale=1, maximum-scale=5"
         />
         <meta
           name="google-site-verification"
           content="Y0yL7YaTBuU7T1xrHe-zjHaVePWsrIt7KIQUMPNjKrk"
         />
+        <link rel="apple-touch-icon" href="/apple-ico.png"></link>
       </Head>
 
       <div className={styles.container}>
