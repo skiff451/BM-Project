@@ -13,24 +13,26 @@ export default function Category() {
         <div className={styles["flex-wrapp"]}>
           <ProductCategoryItem
             title="Станки лазерной резки"
-            path="category/1"
+              path="category/1"
+              small
           >
             <Image
               src={`${CategoryImgPath}laser-cutting-machine.png`}
               alt="laser-cutting-machine"
-              width={635}
-              height={356}
+              width={407}
+              height={346}
             ></Image>
           </ProductCategoryItem>
 
           <ProductCategoryItem
             title="Станки мультигазовой резки"
-            path="multigas-cutting-machines"
+              path="multigas-cutting-machines"
+              small
           >
             <Image
               src={`${CategoryImgPath}multigas-cutting-machine.png`}
               alt="laser-cutting-machine"
-              width={625}
+              width={407}
               height={346}
             ></Image>
           </ProductCategoryItem>

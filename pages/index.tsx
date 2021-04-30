@@ -21,10 +21,8 @@ export default function Home({ data }: IData) {
         <html lang="ru" />
         <title>LaserBm</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, maximum-scale=3"
-        />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta charSet="utf-8"/>
         <meta
           name="google-site-verification"
           content="Y0yL7YaTBuU7T1xrHe-zjHaVePWsrIt7KIQUMPNjKrk"
@@ -36,6 +34,7 @@ export default function Home({ data }: IData) {
           станки мультигазовой резки, фрезерные станки, преса гибочные, ЧПУ,
           высокое качество станков, промышленные станки"
         />
+
         <meta
           name="description"
           content="станки, станки плазменной резки, станки лазерной резки, 
@@ -43,7 +42,7 @@ export default function Home({ data }: IData) {
           высокое качество станков, промышленные станки,
           Мы лучшая компания которая занимается продажей станков лазерной, мультигазовой, плазменной резки
           "
-        ></meta>
+        />
         <link rel="apple-touch-icon" href="/apple-ico.png"></link>
       </Head>
 

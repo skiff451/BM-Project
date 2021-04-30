@@ -16,7 +16,7 @@ export default function ProductCategory({
 }: ProductCategoryProps) {
   return (
     <Link href={path}>
-      <a className="nav-item">
+      <a >
         <div className={small ? styles["small-card"] : styles["large-card"]}>
           {children}
           <div className={styles["title-wrapper"]}>
