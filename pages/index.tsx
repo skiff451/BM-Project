@@ -5,16 +5,16 @@ import Category from "../components/Category";
 import WhyUs from "../components/WhyUs";
 import ConsultForm from "../components/ConsultForm";
 
-import styles from "../styles/Home.module.scss";
+
 import PopularProducts from "../components/PopularProducts";
 import CallButton from "../components/CallButton";
 
-interface IData {
-  data: IDataFetched;
-}
+// interface IData {
+//   data: IDataFetched;
+// }
 
-export default function Home({ data }: IData) {
-  console.log(data);
+export default function Home() {
+ 
   return (
     <>
      <Head>
@@ -48,16 +48,16 @@ export default function Home({ data }: IData) {
           <link rel="apple-touch-icon" href="/apple-ico.png"></link>
         </Head>
 
-      <div className={styles.container}>
+      
         <MainLayout>
           <Promo />
-          <WhyUs />
+          {/* <WhyUs /> */}
           <Category />
           <ConsultForm />
           <PopularProducts />
           <CallButton tel="+380507108908" />
         </MainLayout>
-      </div>
+      
     </>
   );
 }

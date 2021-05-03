@@ -5,6 +5,7 @@ import {
   ButtonBack,
   ButtonNext,
 } from "pure-react-carousel";
+import { useEffect, useState } from "react";
 
 import ProductItem from "../ProductItem";
 
@@ -21,6 +22,38 @@ interface ProductCarouselProps {
 }
 
 export default function ProductCarousel({ products }: ProductCarouselProps) {
+  const [slidesNum, setSlidesNum] = useState(getSlidesNumber());
+
+  function getSlidesNumber() {
+    if (typeof window !== "undefined") {
+      if (window.innerWidth < 718) {
+        return 1;
+      }
+      if (window.innerWidth < 985) {
+        return 2;
+      }
+      if (window.innerWidth < 1300) {
+        return 3;
+      }
+    }
+    return 4;
+  }
+
+  function SlidesNumberChecker() {
+    console.log(slidesNum);
+    console.log("get ", getSlidesNumber());
+    setSlidesNum(getSlidesNumber());
+  }
+
+  if (typeof window !== "undefined") {
+    useEffect(() => {
+      window.addEventListener(`resize`, SlidesNumberChecker);
+      return () => {
+        window.removeEventListener(`resize`, SlidesNumberChecker);
+      };
+    });
+  }
+
   const slides = products.map((item) => {
     return (
       <Slide key={item.id} className="slide" index={0}>
@@ -38,7 +71,7 @@ export default function ProductCarousel({ products }: ProductCarouselProps) {
         isPlaying
         interval={4500}
         infinite
-        visibleSlides={4}
+        visibleSlides={slidesNum}
         touchEnabled
       >
         <Slider
