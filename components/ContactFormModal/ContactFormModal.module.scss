@@ -9,19 +9,29 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  
+
   // height: 100%;
   // width: 100%;
   // position: fixed;
   // overflow: hidden;
-
 }
 
 .contact-form {
-  
   width: 553px;
   height: 559px;
   background-color: $white;
   border-radius: 20px;
   box-shadow: 7px 4px 78px 0px rgba(255, 98, 0, 0.2);
+}
+.contact-form-wrapper{
+  position: relative;
+}
+.close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  &:hover{
+    opacity: .8;
+    cursor: pointer;
+  }
 }

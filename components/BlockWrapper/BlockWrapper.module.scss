@@ -7,3 +7,11 @@
   font-size: 2.5vw;
   color: $black;
 }
+
+@media (max-width: 980px) {
+  .title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+}

@@ -11,7 +11,6 @@ export default function ContactFormModal({
   open,
   setOpen,
 }: ContactFormModalProps) {
-  
   useEffect(() => {
     const scroll = () => {
       window.scrollTo(0, 0);
@@ -34,13 +33,24 @@ export default function ContactFormModal({
         }
       }}
     >
-      <ContactForm
-        title="Нужна консультация?"
-        subtitle="Оставьте свои данные и мы перезвоним"
-        style={{
-          form: styles["contact-form"],
-        }}
-      />
+      <div className={styles["contact-form-wrapper"]}>
+        <ContactForm
+          title="Нужна консультация?"
+          subtitle="Оставьте свои данные и мы перезвоним"
+          style={{
+            form: styles["contact-form"],
+          }}
+        />
+        <span className={styles.close}>
+          <img
+            src="/assets/close/close.svg"
+            alt="close"
+            height="40"
+            width="40"
+            onClick={() => { setOpen(false) }}
+          />
+        </span>
+      </div>
     </div>
   ) : null;
 }

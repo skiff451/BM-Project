@@ -26,3 +26,10 @@
     cursor: pointer;
   }
 }
+
+
+@media (max-width: 500px) {
+  .btn{
+    border-radius: 2px;
+  }
+}

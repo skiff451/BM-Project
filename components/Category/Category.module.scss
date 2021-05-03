@@ -4,6 +4,9 @@
 
 .flex-wrapp {
   display: flex;
-  flex-wrap: wrap;
-  // align-content: space-evenly;
+  flex-wrap: wrap;  
 }
+
+@media (max-width: 900px) {.flex-wrapp {
+  justify-content: center;
+}}
