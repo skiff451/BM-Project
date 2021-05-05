@@ -2,19 +2,68 @@
 
 .phone-btn {
   position: fixed;
-  right: 80px;
-  bottom: 129px;
-  width: 80px;
-  height: 80px;
+  right: 5.556vw;
+  bottom: 8.958vw;
+  width: 5.556vw;
+  height: 5.556vw;
   border-radius: 50px;
   background-color: $orange;
   z-index: 100500;
- 
+
   display: flex;
   align-items: center;
   justify-content: center;
-  &:hover{
+  &:hover {
     background: $orange-hover;
     box-shadow: 4px 6px 50px rgba(251, 42, 0, 0.3);
+  }
+
+  animation: shakeX 1s cubic-bezier(0.35, 0.08, 0.2, 0.95) alternate both;
+  animation-delay: 20s;
+  transform: translateX(0);
+}
+.phone-img {
+  width: 2.083vw;
+  height: 2.083vw;
+}
+
+@media (max-width: 800px) {
+  .phone-btn {
+    width: 10vw;
+    height: 10vw;
+  }
+
+  .phone-img {
+    width: 3.75vw;
+    height: 3.75vw;
+  }
+}
+
+@keyframes shakeX {
+  10%,
+  90% {
+    transform: translateX(-1px);
+  }
+
+  20%,
+  80% {
+    transform: translateX(2px);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translateX(-3px);
+  }
+
+  40%,
+  60% {
+    transform: translateX(3px);
+  }
+}
+
+@media (max-width: 1000px) {
+  .wrapper {
+    width: 100%;
   }
 }

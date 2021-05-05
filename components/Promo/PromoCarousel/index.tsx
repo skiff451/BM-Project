@@ -36,7 +36,7 @@ export default function Carousel({openModal}:CarouselProps) {
             src="/assets/promo-carousel-imgs/Background_1.png"
             alt=""
             width={1440}
-            height={676}
+            height={1000}
             layout="responsive"
           />
           <PromoContent>
@@ -52,7 +52,7 @@ export default function Carousel({openModal}:CarouselProps) {
             src="/assets/promo-carousel-imgs/Background_2.png"
             alt=""
             width={1440}
-            height={676}
+            height={1000}
             layout="responsive"
           />
           <PromoContent>
@@ -68,7 +68,7 @@ export default function Carousel({openModal}:CarouselProps) {
             src="/assets/promo-carousel-imgs/Background_3.png"
             alt=""
             width={1440}
-            height={676}
+            height={1000}
             layout="responsive"
           />
           <PromoContent>
@@ -84,7 +84,7 @@ export default function Carousel({openModal}:CarouselProps) {
             src="/assets/promo-carousel-imgs/Background_4.png"
             alt=""
             width={1440}
-            height={676}
+            height={1000}
             layout="responsive"
           />
           <PromoContent>
@@ -100,7 +100,7 @@ export default function Carousel({openModal}:CarouselProps) {
             src="/assets/promo-carousel-imgs/Background_5.png"
             alt=""
             width={1440}
-            height={676}
+            height={1000}
             layout="responsive"
           />
           <PromoContent>
@@ -131,7 +131,7 @@ export default function Carousel({openModal}:CarouselProps) {
           </ButtonNext>
           <div className={styles.order}>
             <Button
-              responsive
+              responsive={true}
               onClick={()=>{openModal(true)}}
             >
               Заказать звонок

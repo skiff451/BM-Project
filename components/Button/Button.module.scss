@@ -27,9 +27,13 @@
   }
 }
 
-
-@media (max-width: 500px) {
-  .btn{
+@media (max-width: 800px) {
+  .btn {
     border-radius: 2px;
+  }
+  .responsive {
+    width: 26vw;
+    height: 7vw;
+    font-size: 2vw;
   }
 }

@@ -1,4 +1,3 @@
-import Button from "../../../Button";
 import styles from "./PromoContent.module.scss";
 
 interface PromoContentProps {

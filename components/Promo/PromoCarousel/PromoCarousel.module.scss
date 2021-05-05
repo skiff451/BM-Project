@@ -72,7 +72,7 @@
   margin-top: 11.806vw;
   font-style: normal;
   font-weight: bold;
-  font-size: clamp(16px, 3.75vw, 56px);
+  font-size: clamp(20px, 3.75vw, 56px);
   line-height: 4.167vw;
 }
 
@@ -81,14 +81,40 @@
   margin-top: 3.472vw;
   font-style: normal;
   font-weight: normal;
-  font-size: clamp(6px, 1.25vw, 18px);
-  line-height: 2vw;
+  font-size: clamp(10px, 1.25vw, 18px);
+  line-height: 2.5vw;
   letter-spacing: 0.05em;
 }
 
 .order {
   position: absolute;
-  top: 29.917vw;
-  width: 15.139vw;
-  height: 4.167vw;
+  bottom:  7vw;
+}
+
+@media (max-width: 700px) {
+  .title {
+    margin-top: 15.806vw;
+  }
+
+  .description{
+    width: 200px;
+    line-height: 3.429vw;
+  }
+  .bullets-wrapper{
+    bottom:  5vw;
+  }
+
+  .order {
+    bottom:  20vw;
+  }
+}
+
+@media (max-width: 550px) {
+  .left-btn {
+    display: none;
+  }
+  .right-btn {
+    display: none;
+  }
+
 }

@@ -13,8 +13,6 @@ import CallButton from "../components/CallButton";
 // }
 
 export default function Home() {
-  
-  
   return (
     <>
       <Head>
@@ -51,7 +49,7 @@ export default function Home() {
         <Category />
         <ConsultForm />
         <PopularProducts />
-        {/* <CallButton tel="+380507108908" /> */}
+        <CallButton tel="+380507108908" />
       </MainLayout>
     </>
   );
