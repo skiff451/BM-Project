@@ -22,8 +22,8 @@ interface ProductCarouselProps {
 }
 
 export default function ProductCarousel({ products }: ProductCarouselProps) {
-  const [slidesNum, setSlidesNum] = useState(getSlidesNumber());
-
+  const [slidesNum, setSlidesNum] = useState<number>();
+   
   function getSlidesNumber() {
     if (typeof window !== "undefined") {
       if (window.innerWidth < 718) {
@@ -35,17 +35,19 @@ export default function ProductCarousel({ products }: ProductCarouselProps) {
       if (window.innerWidth < 1300) {
         return 3;
       }
+      return 4;
     }
-    return 4;
   }
 
   function SlidesNumberChecker() {
-    console.log(slidesNum);
-    console.log("get ", getSlidesNumber());
     setSlidesNum(getSlidesNumber());
   }
 
   if (typeof window !== "undefined") {
+    useEffect(() => {
+      setSlidesNum(getSlidesNumber());
+    }, []);
+
     useEffect(() => {
       window.addEventListener(`resize`, SlidesNumberChecker);
       return () => {

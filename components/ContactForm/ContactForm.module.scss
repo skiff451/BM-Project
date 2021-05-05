@@ -47,7 +47,7 @@
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
-  line-height: 40px;
+  
 }
 
 .subtitle {
@@ -84,13 +84,16 @@
 }
 .input-block {
   margin: 40px 0;
-  width: 403px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  input:nth-child(2n) {
+    margin-left: 30px;
+  }
 }
 
-.long-input {
-  width: 403px;
+.input {
+  width: 100%;
   @extend %input-style;
   &::placeholder {
     @extend %placeholder;
@@ -100,16 +103,6 @@
   }
 }
 
-.short-input {
-  width: 188px;
-  @extend %input-style;
-  &::placeholder {
-    @extend %placeholder;
-  }
-  &:focus {
-    @extend %input-focus;
-  }
-}
 
 .error {
   background-color: $input-error;
@@ -146,9 +139,12 @@
   }
 }
 
-
 @media (max-width: 550px) {
   .input-block {
     flex-direction: column;
+    input:nth-child(2) {
+      margin-left: 0;
+      margin-top: 20px;
+    }
   }
 }

@@ -62,8 +62,7 @@ export default function ContactForm({
   const {
     nameInputStyle,
     telInputStyle,
-    longInputStyle,
-    shortInputStyle,
+    inputStyle,
     titleStyle,
     subTitleStyle,
     restrictionStyle,
@@ -96,7 +95,7 @@ export default function ContactForm({
             }}
           />
           <input
-            className={shortInputStyle}
+            className={inputStyle}
             type="email"
             placeholder="Введите e-mail"
             value={email}
@@ -107,7 +106,7 @@ export default function ContactForm({
         </div>
 
         <textarea
-          className={longInputStyle}
+          className={inputStyle}
           placeholder="Оставить комментарий"
           value={comment}
           onChange={(e) => {

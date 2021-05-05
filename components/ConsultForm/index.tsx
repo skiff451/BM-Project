@@ -5,7 +5,7 @@ import styles from "./ConsultForm.module.scss";
 
 export default function ConsultForm() {
   const [isImgRender, setImgRender] = useState(true);
-  
+
   function imgChecker() {
     if (typeof window !== "undefined") {
       if (window.innerWidth < 1111) {
@@ -17,6 +17,10 @@ export default function ConsultForm() {
   }
 
   if (typeof window !== "undefined") {
+    useEffect(() => {
+      imgChecker();
+    }, []);
+
     useEffect(() => {
       window.addEventListener(`resize`, imgChecker);
       return () => {

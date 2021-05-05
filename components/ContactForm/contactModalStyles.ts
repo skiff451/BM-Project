@@ -11,27 +11,27 @@ export default function formStyles(
     telErr: boolean;
   }
 ) {
-  const nameInputStyle = classNames(styles["long-input"], {
+  const nameInputStyle = classNames(styles["input"], {
     [styles.error]: inputErr.nameErr,
     [styles["input-light"]]: version === "light",
     [styles["input-dark"]]: version === "dark",
   });
 
-  const telInputStyle = classNames(styles["short-input"], {
+  const telInputStyle = classNames(styles["input"], {
     [styles.error]: inputErr.telErr,
     [styles["input-light"]]: version === "light",
     [styles["input-dark"]]: version === "dark",
   });
 
-  const longInputStyle = classNames(styles["long-input"], {
+  const inputStyle = classNames(styles["input"], {
     [styles["input-light"]]: version === "light",
     [styles["input-dark"]]: version === "dark",
   });
 
-  const shortInputStyle = classNames(styles["short-input"], {
-    [styles["input-light"]]: version === "light",
-    [styles["input-dark"]]: version === "dark",
-  });
+  // const shortInputStyle = classNames(styles["short-input"], {
+  //   [styles["input-light"]]: version === "light",
+  //   [styles["input-dark"]]: version === "dark",
+  // });
 
   const titleStyle = classNames(styles.title, {
     [styles.light]: version === "light",
@@ -57,8 +57,7 @@ export default function formStyles(
   return {
     nameInputStyle,
     telInputStyle,
-    longInputStyle,
-    shortInputStyle,
+    inputStyle,
     titleStyle,
     subTitleStyle,
     restrictionStyle,
