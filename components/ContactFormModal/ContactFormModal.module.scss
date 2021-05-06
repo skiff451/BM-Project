@@ -9,29 +9,33 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
-  // height: 100%;
-  // width: 100%;
-  // position: fixed;
-  // overflow: hidden;
+  z-index: 1000;
 }
 
 .contact-form {
-  width: 553px;
-  height: 559px;
+  margin-top: 10px;
   background-color: $white;
   border-radius: 20px;
   box-shadow: 7px 4px 78px 0px rgba(255, 98, 0, 0.2);
 }
-.contact-form-wrapper{
+.contact-form-wrapper {
   position: relative;
 }
 .close {
   position: absolute;
-  top: 30px;
-  right: 30px;
-  &:hover{
-    opacity: .8;
+  top: 20px;
+  right: 10px;
+  &:hover {
+    opacity: 0.8;
     cursor: pointer;
+  }
+}
+
+@media (max-width: 550px) {
+  .close {
+    width: 6vw;
+
+    height: 6vw;
+
   }
 }

@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Dispatch, SetStateAction, useEffect } from "react";
 import ContactForm from "../ContactForm";
 import styles from "./ContactFormModal.module.scss";
@@ -11,16 +12,17 @@ export default function ContactFormModal({
   open,
   setOpen,
 }: ContactFormModalProps) {
-  useEffect(() => {
-    const scroll = () => {
-      window.scrollTo(0, 0);
-    };
-    if (open) window.addEventListener("scroll", scroll);
+  
+  // useEffect(() => {
+  //   const scroll = () => {
+  //     window.scrollTo(0, 0);
+  //   };
+  //   if (open) window.addEventListener("scroll", scroll);
 
-    return () => {
-      window.removeEventListener("scroll", scroll);
-    };
-  }, [open]);
+  //   return () => {
+  //     window.removeEventListener("scroll", scroll);
+  //   };
+  // }, [open]);
 
   return open ? (
     <div
@@ -42,7 +44,7 @@ export default function ContactFormModal({
           }}
         />
         <span className={styles.close}>
-          <img
+          <Image
             src="/assets/close/close.svg"
             alt="close"
             height="40"

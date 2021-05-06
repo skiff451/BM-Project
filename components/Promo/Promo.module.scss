@@ -3,10 +3,10 @@
   position: relative;
   width: 100%;
   height: 46.944vw;
+  z-index: 1000;
 }
 
 .inner {
-  // min-height: 15.625vw;
   display: flex;
   align-items: center;
 }
