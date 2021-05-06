@@ -1,17 +1,28 @@
-import Wrapper from "../BlockWrapper";
-import Item from "./Item";
+import BlockWrapper from "../BlockWrapper";
+import Item from "./WhyUsItem";
 
 import styles from "./WhyUs.module.scss";
 
 export default function WhyUs() {
   return (
-    <Wrapper title="Почему выбирают нас">
-      <div className={styles.box}>
-        <Item title="Высокая геометрическая точность станков" />
-        <Item title="Высокая жесткость конструкции" />
-        <Item title="Максимум функционала за оптимальную стоимость" />
-        <Item title="Простота управления всех станков" />
-      </div>
-    </Wrapper>
+    <div className={styles["block-wrapper"]}>
+      <BlockWrapper title="Почему выбирают нас">
+        <div className={styles.wrapper}>
+          <Item
+            text="Высокая геометрическая точность станков"
+            imgName="accuracy.png"
+          />
+          <Item
+            text="Максимум функционала за оптимальную стоимость"
+            imgName="optimality.png"
+          />
+          <Item text="Высокая жесткость конструкции" imgName="simplicity.png" />
+          <Item
+            text="Простота управления всех станков"
+            imgName="structural-rigidity.png"
+          />
+        </div>
+      </BlockWrapper>
+    </div>
   );
 }

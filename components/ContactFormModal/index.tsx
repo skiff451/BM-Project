@@ -13,16 +13,16 @@ export default function ContactFormModal({
   setOpen,
 }: ContactFormModalProps) {
   
-  // useEffect(() => {
-  //   const scroll = () => {
-  //     window.scrollTo(0, 0);
-  //   };
-  //   if (open) window.addEventListener("scroll", scroll);
+  useEffect(() => {
+    const scroll = () => {
+      window.scrollTo(0, 0);
+    };
+    if (open) window.addEventListener("scroll", scroll);
 
-  //   return () => {
-  //     window.removeEventListener("scroll", scroll);
-  //   };
-  // }, [open]);
+    return () => {
+      window.removeEventListener("scroll", scroll);
+    };
+  }, [open]);
 
   return open ? (
     <div

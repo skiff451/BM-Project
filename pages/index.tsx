@@ -45,7 +45,7 @@ export default function Home() {
 
       <MainLayout>
         <Promo />
-        {/* <WhyUs /> */}
+        <WhyUs />
         <Category />
         <ConsultForm />
         <PopularProducts />
