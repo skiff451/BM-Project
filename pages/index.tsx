@@ -49,7 +49,7 @@ export default function Home() {
         <Category />
         <ConsultForm />
         <PopularProducts />
-        <CallButton tel="+380507108908" />
+        <CallButton tel="+380667528540" />
       </MainLayout>
     </>
   );
