@@ -11,8 +11,8 @@ export default function Footer() {
             <Logo src="/assets/logo/bm-logo-2.svg" />
             <Navigation />
             <Contacts
-              tel="+380507108908"
-              mail="samsonskiff@gmail.com"
+              tel="+380667528540"
+              mail="Office@bmprom.com"
               horizontal={false}
             />
           </footer>

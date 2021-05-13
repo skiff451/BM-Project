@@ -11,8 +11,8 @@ export default function Header() {
             <Logo src="/assets/logo/bm-logo-1.svg" />
             <Navigation />
             <Contacts
-              tel="+380507108908"
-              mail="samsonskiff@gmail.com"
+              tel="+380667528540"
+              mail="Office@bmprom.com"
               horizontal={true}
             />
           </header>

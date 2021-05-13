@@ -25,6 +25,7 @@ export default function ContactForm({
   const [tel, setTel] = useState("");
   const [email, setEmail] = useState("");
   const [comment, setComment] = useState("");
+ 
   const [inputErr, setInputErr] = useState({
     nameErr: false,
     telErr: false,
@@ -45,6 +46,7 @@ export default function ContactForm({
       nameErr: false,
       telErr: false,
     });
+    
     setFormInfo({
       name,
       tel,
@@ -55,9 +57,9 @@ export default function ContactForm({
 
   useEffect(() => {
     if (appear) {
-      setTimeout(()=>setAppear(false), 3000)
+      setTimeout(() => setAppear(false), 3000);
     }
-  },[appear])
+  }, [appear]);
 
   function onFormSubmit() {
     const nameReg = /[А-Я]{4,20}/gi;
@@ -73,14 +75,16 @@ export default function ContactForm({
         headers: {
           "Content-Type": "application/json",
         },
-         body: JSON.stringify(formInfo),
-      }).then(res => {
-        console.log("Respon", res.ok)
-        setMailConfirm(res.ok)
-         setAppear(true);
+        body: JSON.stringify(formInfo),
+      }).then((res) => {
+        setMailConfirm(res.ok);
+        setAppear(true);
+        setName("");
+        setTel("");
+        setEmail("");
+        setComment("");
       });
     }
-   
   }
 
   const {
@@ -141,7 +145,7 @@ export default function ContactForm({
           *Поля отмеченные звездочкой являются обязательными к заполнению
         </span>
         <Button onClick={onFormSubmit}>Отправить</Button>
-          { appear && <MailConfirm confirm={mailConfirm} />}
+        {appear && <MailConfirm confirm={mailConfirm} />}
       </div>
     </div>
   );

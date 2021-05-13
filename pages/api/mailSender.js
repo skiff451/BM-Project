@@ -33,8 +33,8 @@ export default async (req, res) => {
         to: "samsonskiff@gmail.com",
         subject: `New message from customer`,
         text: `клиент: ${name}`,
-        html: `<h2>${name}</h2>
-                <h1>${tel}</h1>
+        html: `<h1>${name}</h1>
+                <h2>${tel}</h2>
                 <p>${comment}
                 <br/>
                 ${email}
