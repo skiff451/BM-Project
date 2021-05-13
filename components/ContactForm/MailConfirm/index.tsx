@@ -1,5 +1,4 @@
 import Image from "next/image";
-import { Dispatch, SetStateAction, useEffect, useState } from "react";
 
 import styles from "./mailConfirm.module.scss";
 

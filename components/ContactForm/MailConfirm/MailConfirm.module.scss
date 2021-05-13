@@ -1,9 +1,8 @@
 @import "../../../styles/colors.scss";
+
 .box {
   position: absolute;
   top: calc(50% - 47px);
-  // left: calc(50% - 115px);
-
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -12,7 +11,6 @@
   border: 1px solid #0e78bd75;
   box-sizing: border-box;
   border-radius: 6px;
-
   width: 90%;
   height: 94px;
 }
