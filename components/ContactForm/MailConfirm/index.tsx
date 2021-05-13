@@ -1,7 +1,6 @@
 import Image from "next/image";
 
-import styles from "./mailConfirm.module.scss";
-
+import styles from "../mailConfirm.module.scss";
 interface MailConfirmProps {
   confirm: boolean | undefined;
 }
