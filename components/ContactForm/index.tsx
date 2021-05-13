@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Button from "../Button";
 import formStyles from "./contactModalStyles";
 import styles from "./ContactForm.module.scss";
+import MailConfirm from "./MailConfirm";
 
 interface ContactFormProps {
   title: string;
@@ -29,6 +30,9 @@ export default function ContactForm({
     telErr: false,
   });
 
+  const [mailConfirm, setMailConfirm] = useState(false);
+  const [appear, setAppear] = useState(false);
+
   const [formInfo, setFormInfo] = useState({
     name: "",
     tel: "",
@@ -49,14 +53,34 @@ export default function ContactForm({
     });
   }, [name, tel, email, comment]);
 
+  useEffect(() => {
+    if (appear) {
+      setTimeout(()=>setAppear(false), 3000)
+    }
+  },[appear])
+
   function onFormSubmit() {
     const nameReg = /[А-Я]{4,20}/gi;
     const telReg = /^[+]\d{2}[(]{0,1}[0-9]{3}[)]{0,1}\d{7}$/gi;
-
     setInputErr({
       nameErr: !!name.search(nameReg),
       telErr: !!tel.search(telReg),
     });
+
+    if (!name.search(nameReg) && !tel.search(telReg)) {
+      fetch("/api/mailSender", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+         body: JSON.stringify(formInfo),
+      }).then(res => {
+        console.log("Respon", res.ok)
+        setMailConfirm(res.ok)
+         setAppear(true);
+      });
+    }
+   
   }
 
   const {
@@ -117,6 +141,7 @@ export default function ContactForm({
           *Поля отмеченные звездочкой являются обязательными к заполнению
         </span>
         <Button onClick={onFormSubmit}>Отправить</Button>
+          { appear && <MailConfirm confirm={mailConfirm} />}
       </div>
     </div>
   );

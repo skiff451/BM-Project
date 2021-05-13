@@ -18,7 +18,7 @@ export default function Home() {
       <Head>
         <title>LaserBm</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"></meta>
         <meta charSet="utf-8" />
         <meta
           name="google-site-verification"

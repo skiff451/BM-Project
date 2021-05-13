@@ -17,12 +17,11 @@ export default function CallButton({ tel }: CallButtonProps) {
   }
 
   useEffect(() => {
+    const interval = setInterval(callBtnShaking, 6000);
 
-    const interval = setInterval(callBtnShaking, 5000)
-    
     return () => {
-      clearInterval(interval)
-    }
+      clearInterval(interval);
+    };
   }, []);
 
   return (
