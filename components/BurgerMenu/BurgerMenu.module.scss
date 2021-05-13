@@ -1,0 +1,60 @@
+@import "../../styles/colors.scss";
+
+.close {
+  position: absolute;
+  top: 20px;
+  right: 10px;
+  &:hover {
+    opacity: 0.8;
+    cursor: pointer;
+  }
+}
+
+.burger {
+  display: none;
+}
+
+.menu-wrapper {
+  position: absolute;
+  background-color: rgba(12, 12, 12, 0.774);
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 300px;
+
+  z-index: 10000;
+}
+
+.wrapper {
+  width: 60%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  color: $white;
+  a {
+    font-size: 12px;
+    margin-top: 10px;
+  }
+}
+.nav-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contacts {
+  a {
+    font-size: 8px;
+    margin-top: 8px;
+    width: 60%;
+  }
+}
+
+@media (max-width: 460px) {
+  .burger {
+    display: flex;
+    align-items: center;
+  }
+}
