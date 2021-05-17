@@ -5,17 +5,22 @@ interface ContactsProps {
   tel: string;
   mail: string;
   horizontal?: boolean;
+  iconSrc: {
+    tel: string;
+    mail: string;
+  };
 }
 
 export default function Contacts(props: ContactsProps) {
-  const { tel, mail, horizontal } = props;
+  const { tel, mail, horizontal, iconSrc } = props;
+
   return (
     <div className={horizontal ? styles.contactsH : styles.contactsV}>
       <div className={styles.tel}>
         <>
           <img
             className="ico-tel"
-            src="/assets/contacts-img/tel-img.svg"
+            src={iconSrc.tel}
             alt="tel"
             width={20}
             height={20}
@@ -35,7 +40,7 @@ export default function Contacts(props: ContactsProps) {
         <>
           <img
             className="ico-mail"
-            src="/assets/contacts-img/mail-img.svg"
+            src={iconSrc.mail}
             alt="mail"
             width={20}
             height={16}

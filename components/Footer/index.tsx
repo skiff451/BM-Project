@@ -16,8 +16,12 @@ export default function Footer() {
               tel="+380667528540"
               mail="Office@bmprom.com"
               horizontal={false}
+              iconSrc={{
+                tel: "/assets/contacts-img/tel-img-white.svg",
+                mail: "/assets/contacts-img/mail-img-white.svg",
+              }}
             />
-            <MobNav/>
+            <MobNav />
           </footer>
         </div>
       </div>

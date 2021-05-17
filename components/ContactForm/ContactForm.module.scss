@@ -47,7 +47,6 @@
   font-style: normal;
   font-weight: bold;
   font-size: 28px;
-  
 }
 
 .subtitle {
@@ -77,13 +76,13 @@
 %input-style {
   padding: 7px 0;
   background: transparent;
+  margin-top: 20px;
 }
 
 %input-focus {
   border-bottom: 1px solid $orange;
 }
 .input-block {
-  margin: 40px 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -102,7 +101,6 @@
     @extend %input-focus;
   }
 }
-
 
 .error {
   background-color: $input-error;
@@ -147,7 +145,7 @@
       margin-top: 20px;
     }
   }
-  .wrapper{
+  .wrapper {
     padding: 30px;
   }
 }
