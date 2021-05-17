@@ -1,7 +1,9 @@
 import Logo from "../Logo";
 import Navigation from "../Navigation";
 import Contacts from "../Contacts";
+import MobNav from "./MobNav";
 import styles from "./Footer.module.scss";
+
 export default function Footer() {
   return (
     <div className={styles.outer}>
@@ -15,6 +17,7 @@ export default function Footer() {
               mail="Office@bmprom.com"
               horizontal={false}
             />
+            <MobNav/>
           </footer>
         </div>
       </div>
