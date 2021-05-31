@@ -1,6 +1,7 @@
 @import "../../styles/colors.scss";
 
 .phone-btn {
+ 
   position: fixed;
   right: 5.556vw;
   bottom: 8.958vw;
@@ -27,7 +28,6 @@
 
 .animation{
   animation: shakeX 1s cubic-bezier(0.35, 0.08, 0.2, 0.95) alternate both;
-  // animation-delay: 20s;
   transform: translateX(0);
 }
 

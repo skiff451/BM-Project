@@ -8,17 +8,16 @@ import ConsultForm from "../components/ConsultForm";
 import PopularProducts from "../components/PopularProducts";
 import CallButton from "../components/CallButton";
 
-// interface IData {
-//   data: IDataFetched;
-// }
-
 export default function Home() {
   return (
     <>
       <Head>
         <title>LaserBm</title>
         <link rel="icon" href="/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"></meta>
+        <meta
+          name="viewport"
+          content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"
+        ></meta>
         <meta charSet="utf-8" />
         <meta
           name="google-site-verification"
@@ -41,6 +40,15 @@ export default function Home() {
           "
         />
         <link rel="apple-touch-icon" href="/apple-ico.png"></link>
+        {/* <script>
+          window.ga=window.ga||function(){(ga.q = ga.q || []).push(arguments)}
+          ;ga.l=+new Date; ga('create', 'UA-XXXXX-Y', 'auto'); ga('send',
+          'pageview');
+        </script> */}
+        <script
+          async
+          src="https://www.google-analytics.com/analytics.js"
+        ></script>
       </Head>
 
       <MainLayout>
@@ -55,13 +63,4 @@ export default function Home() {
   );
 }
 
-// export async function getStaticProps() {
-//   // const res = await fetch("/api/data");
-//   // const data: IDataFetched = await res.json();
 
-//   return {
-//     props: {
-//       data,
-//     },
-//   };
-// }
