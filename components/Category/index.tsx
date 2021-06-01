@@ -6,75 +6,40 @@ import styles from "./Category.module.scss";
 
 export default function Category() {
   const CategoryImgPath = "/assets/product-category-img/";
-  
-    return (
+  // ``
+  return (
     <section className={styles["category-wrapper"]}>
       <BlockWrapper title="Наша продукция">
         <div className={styles["flex-wrapp"]}>
           <ProductCategoryItem
             title="Станки лазерной резки"
-              path="category/1"
-              small
-          >
-            <Image
-              src={`${CategoryImgPath}laser-cutting-machine.png`}
-              alt="laser-cutting-machine"
-              width={407}
-              height={346}
-            ></Image>
-          </ProductCategoryItem>
+            path="category/1"
+            imgSrc={`${CategoryImgPath}laser-cutting-machine.png`}
+          />
 
           <ProductCategoryItem
             title="Станки мультигазовой резки"
-              path="multigas-cutting-machines"
-              small
-          >
-            <Image
-              src={`${CategoryImgPath}multigas-cutting-machine.png`}
-              alt="laser-cutting-machine"
-              width={407}
-              height={346}
-            ></Image>
-          </ProductCategoryItem>
+            path="multigas-cutting-machines"
+            imgSrc={`${CategoryImgPath}multigas-cutting-machine.png`}
+          />
 
           <ProductCategoryItem
             title="Станки плазменной резки"
             path="plasma-cutting-machines"
-            small
-          >
-            <Image
-              src={`${CategoryImgPath}plasma-cutting-machine.png`}
-              alt="laser-cutting-machine"
-              width={407}
-              height={346}
-            ></Image>
-          </ProductCategoryItem>
+            imgSrc={`${CategoryImgPath}plasma-cutting-machine.png`}
+          />
 
           <ProductCategoryItem
             title="Преса гибочные"
             path="bending-presses"
-            small
-          >
-            <Image
-              src={`${CategoryImgPath}bending-presses.png`}
-              alt="laser-cutting-machine"
-              width={407}
-              height={346}
-            ></Image>
-          </ProductCategoryItem>
+            imgSrc={`${CategoryImgPath}bending-presses.png`}
+          />
 
           <ProductCategoryItem
             title="Станки фрезерные"
             path="milling-machines"
-            small
-          >
-            <Image
-              src={`${CategoryImgPath}milling-machines.png`}
-              alt="laser-cutting-machine"
-              width={407}
-              height={346}
-            ></Image>
-          </ProductCategoryItem>
+            imgSrc={`${CategoryImgPath}milling-machines.png`}
+          />
         </div>
       </BlockWrapper>
     </section>

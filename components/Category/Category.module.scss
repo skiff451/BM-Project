@@ -6,9 +6,10 @@
 .flex-wrapp {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
-@media (max-width: 900px) {
+@media (max-width: 780px) {
   .flex-wrapp {
     justify-content: center;
   }
