@@ -14,8 +14,18 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.111vw;
-  line-height: 19px;
-  letter-spacing: 0.02em;
 }
 
+@media (max-width: 684px) {
+  .header {
+    padding: 15px 0;
+    height: 100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    nav {
+      height: 50px;
+      order: 3;
+    }
+  }
+}

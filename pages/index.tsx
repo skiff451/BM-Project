@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>LaserBm</title>
+        <title>MetalCut</title>
         <link rel="icon" href="/favicon.ico" />
         <meta
           name="viewport"
