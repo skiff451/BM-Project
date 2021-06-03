@@ -1,14 +1,7 @@
 .navigation {
-  padding: 0 2.083vw;
   display: flex;
   justify-content: space-between;
   width: 100%;
   align-items: center;
   height: 100%;
-}
-
-@media (max-width: 460px) {
-  .navigation {
-    display: none;
-  }
 }

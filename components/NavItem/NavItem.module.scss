@@ -2,6 +2,7 @@
 
 .nav-item {
   margin: 0 5px;
+  // font-size: calc(0.129rem + 1vw);
   &:hover {
     color: $orange;
   }
@@ -19,7 +20,7 @@
   }
 }
 
-@media (max-width: 1100px) {
+@media (max-width: 1120px) {
   .nav-item {
     font-size: 12px;
   }

@@ -10,16 +10,20 @@ export default function Header() {
         <div className={styles.inner}>
           <header className={styles.header}>
             <Logo src="/assets/logo/bm-logo-1.svg" />
-            <Navigation />
-            <Contacts
-              tel="+380667528540"
-              mail="Office@bmprom.com"
-              horizontal={true}
-              iconSrc={{
-                tel: "/assets/contacts-img/tel-img.svg",
-                mail: "/assets/contacts-img/mail-img.svg",
-              }}
-            />
+            <div className={styles["no-display"]}>
+              <Navigation />
+            </div>
+            <div className={styles["no-display"]}>
+              <Contacts
+                tel="+380667528540"
+                mail="Office@bmprom.com"
+                horizontal={true}
+                iconSrc={{
+                  tel: "/assets/contacts-img/tel-img.svg",
+                  mail: "/assets/contacts-img/mail-img.svg",
+                }}
+              />
+            </div>
             <BurgerMenu version={"black"} />
           </header>
         </div>

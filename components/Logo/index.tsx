@@ -6,7 +6,7 @@ interface LogoProps {
 export default function Logo({ src }: LogoProps) {
   return (
     <>
-      <Image className="logo" src={src} alt="logo" width={189} height={33} />
+      <Image className="logo" src={src} alt="logo" width={169} height={33} />
     </>
   );
 }

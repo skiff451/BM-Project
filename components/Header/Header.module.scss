@@ -16,16 +16,29 @@
   align-items: center;
 }
 
-@media (max-width: 684px) {
+.no-display {
+  display: inline;
+  margin: 0 10px;
+}
+
+@media (max-width: 841px) {
   .header {
     padding: 15px 0;
     height: 100px;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    nav {
-      height: 50px;
-      order: 3;
-    }
+  }
+  .no-display:nth-child(2) {
+    margin: 0;
+    width: 400px;
+    height: 50px;
+    order: 3;
+  }
+}
+
+@media (max-width: 460px) {
+  .no-display {
+    display: none;
   }
 }
