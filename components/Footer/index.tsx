@@ -11,16 +11,21 @@ export default function Footer() {
         <div className={styles.inner}>
           <footer className={styles.footer}>
             <Logo src="/assets/logo/bm-logo-2.svg" />
-            <Navigation />
-            <Contacts
-              tel="+380667528540"
-              mail="Office@bmprom.com"
-              horizontal={false}
-              iconSrc={{
-                tel: "/assets/contacts-img/tel-img-white.svg",
-                mail: "/assets/contacts-img/mail-img-white.svg",
-              }}
-            />
+            <div className={styles["no-display"]}>
+              {" "}
+              <Navigation />
+            </div>
+            <div className={styles["no-display"]}>
+              <Contacts
+                tel="+380667528540"
+                mail="Office@bmprom.com"
+                horizontal={false}
+                iconSrc={{
+                  tel: "/assets/contacts-img/tel-img-white.svg",
+                  mail: "/assets/contacts-img/mail-img-white.svg",
+                }}
+              />
+            </div>
             <MobNav />
           </footer>
         </div>
