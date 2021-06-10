@@ -33,24 +33,6 @@ const list = [
     img: "product_1.png",
     altText: "",
   },
-  {
-    id: 6,
-    name: "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
-    img: "product_2.png",
-    altText: "",
-  },
-  {
-    id: 7,
-    name: "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
-    img: "product_3.png",
-    altText: "",
-  },
-  {
-    id: 8,
-    name: "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
-    img: "product_4.png",
-    altText: "",
-  },
 ];
 
 export default function PopularProducts() {

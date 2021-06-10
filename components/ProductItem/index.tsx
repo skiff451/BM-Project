@@ -3,24 +3,25 @@ import Link from "next/link";
 import styles from "./ProductItem.module.scss";
 
 interface ProductItemProps {
-  imgName: string;
+  imgSrc: string;
   altText: string;
   name: string;
   link?: string;
 }
 
 export default function ProductItem({
-  imgName,
+  imgSrc,
   altText,
   name,
   link = "/",
 }: ProductItemProps) {
+  
   return (
     <Link href={link}>
-      <a>
+      <a href={link}>
         <div className={styles.item}>
           <Image
-            src={`/assets/products-imgs/${imgName}`}
+            src={imgSrc}
             alt={altText}
             width={298}
             height={214}

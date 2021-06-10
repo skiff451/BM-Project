@@ -1,0 +1,17 @@
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:start;
+}
+
+.subcategory-item {
+  width: 340px;
+  margin: 10px;
+  
+}
+
+@media (max-width: 780px) {
+  .flex-wrapp {
+    justify-content: center;
+  }
+}

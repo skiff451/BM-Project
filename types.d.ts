@@ -1,7 +1,7 @@
 interface IProduct {
   id: number;
   name: string;
-  img: string;
+  imgsSrcArr: string[];
   altText: string;
   link: string;
 }
@@ -15,13 +15,26 @@ interface ISubCategory {
 
 interface ICategory {
   id: number;
+  categoryName: string;
   name: string;
   enable: boolean;
   description: string;
-  subCategory: ISubCategory[];
+  imgSrc: string;
+  path: string;
+  products: IProducts[];
 }
 
 interface IDataFetched {
   name: string;
   category: ICategory[];
 }
+
+interface IProducts {
+  id: string;
+  name: string;
+  imgSrc: string[];
+  altText: string;
+  link: string;
+}
+
+interface IFullProductData {}

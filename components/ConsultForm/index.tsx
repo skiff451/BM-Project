@@ -3,7 +3,11 @@ import { useEffect, useState } from "react";
 import ContactForm from "../ContactForm";
 import styles from "./ConsultForm.module.scss";
 
-export default function ConsultForm() {
+interface IConsultFormProps {
+  imgSrc: string;
+}
+
+export default function ConsultForm({ imgSrc }: IConsultFormProps) {
   const [isImgRender, setImgRender] = useState(true);
 
   function imgChecker() {
@@ -41,14 +45,8 @@ export default function ConsultForm() {
             form: styles["contact-form"],
           }}
         />
-
         {isImgRender && (
-          <Image
-            src="/assets/consult-form-imgs/consult_1.png"
-            alt="consult"
-            width={844}
-            height={539}
-          />
+          <Image src={imgSrc} alt="consultPicture" width={844} height={539} />
         )}
       </div>
     </div>

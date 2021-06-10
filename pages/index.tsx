@@ -55,8 +55,8 @@ export default function Home() {
         <Promo />
         <WhyUs />
         <Category />
-        <ConsultForm />
-        <PopularProducts />
+        <ConsultForm imgSrc="/assets/consult-form-imgs/consult_1.png"/>
+        {/* <PopularProducts /> */}
         <CallButton tel="+380667528540" />
       </MainLayout>
     </>

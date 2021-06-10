@@ -3,153 +3,166 @@
     "category": [
         {
             "id": 1,
+            "categoryName": "laser-cutting-machine",
             "name": "Станки лазерной резки",
+            "imgSrc": "/assets/product-category-img/laser-cutting-machine.png",
+            "path": "category/laser-cutting-machine?id=1",
             "enable": true,
             "description": "",
-            "subCategory": [
+            "products": [
                 {
                     "id": 1,
-                    "name": "first subcategory",
-                    "enable": true,
-                    "products": [
-                        {
-                            "id": 1,
-                            "name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
-                            " img": "product_1.png",
-                            "altText": "",
-                            "link": ""
-                        },
-                        {
-                            "id": 2,
-                            "name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
-                            "img": "product_2.png",
-                            "altText": ""
-                        },
-                        {
-                            " id": 3,
-                            "name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
-                            "img": "product_3.png",
-                            "altText": ""
-                        },
-                        {
-                            "id": 4,
-                            "name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
-                            "img": "product_4.png",
-                            "altText": ""
-                        },
-                        {
-                            "id": 5,
-                            "name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
-                            "img": "product_1.png",
-                            "altText": ""
-                        },
-                        {
-                            "id": 6,
-                            " name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
-                            "img": "product_2.png",
-                            "altText": ""
-                        },
-                        {
-                            "id": 7,
-                            "name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
-                            "img": "product_3.png",
-                            "altText": ""
-                        },
-                        {
-                            "id": 8,
-                            "name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
-                            "img": "product_4.png",
-                            "altText": ""
-                        }
-                    ]
+                    "name": "Станок лазерной резки труб AL15_100T+RFL1000",
+                    "imgsSrcArr": [
+                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/AL15-100T+RFL1000.jpg",
+                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/Schema_AL15-100T+RFL1000.png"
+                    ],
+                    "altText": "Станок лазерной резки труб AL15_100T+RFL1000",
+                    "link": ""
+                },
+                {
+                    "id": 1,
+                    "name": "Станок лазерной резки труб AL15_100T+RFL1000",
+                    "imgsSrcArr": [
+                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/AL15-100T+RFL1000.jpg",
+                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/Schema_AL15-100T+RFL1000.png"
+                    ],
+                    "altText": "Станок лазерной резки труб AL15_100T+RFL1000",
+                    "link": ""
+                },
+                {
+                    "id": 1,
+                    "name": "Станок лазерной резки труб AL15_100T+RFL1000",
+                    "imgsSrcArr": [
+                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/AL15-100T+RFL1000.jpg",
+                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/Schema_AL15-100T+RFL1000.png"
+                    ],
+                    "altText": "Станок лазерной резки труб AL15_100T+RFL1000",
+                    "link": ""
+                },
+                {
+                    "id": 1,
+                    "name": "Станок лазерной резки труб AL15_100T+RFL1000",
+                    "imgsSrcArr": [
+                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/AL15-100T+RFL1000.jpg",
+                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/Schema_AL15-100T+RFL1000.png"
+                    ],
+                    "altText": "Станок лазерной резки труб AL15_100T+RFL1000",
+                    "link": ""
+                },
+                {
+                    "id": 1,
+                    "name": "Станок лазерной резки труб AL15_100T+RFL1000",
+                    "imgsSrcArr": [
+                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/AL15-100T+RFL1000.jpg",
+                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/Schema_AL15-100T+RFL1000.png"
+                    ],
+                    "altText": "Станок лазерной резки труб AL15_100T+RFL1000",
+                    "link": ""
+                },
+                {
+                    "id": 1,
+                    "name": "Станок лазерной резки труб AL15_100T+RFL1000",
+                    "imgsSrcArr": [
+                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/AL15-100T+RFL1000.jpg",
+                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/Schema_AL15-100T+RFL1000.png"
+                    ],
+                    "altText": "Станок лазерной резки труб AL15_100T+RFL1000",
+                    "link": ""
+                },
+                {
+                    "id": 1,
+                    "name": "Станок лазерной резки труб AL15_100T+RFL1000",
+                    "imgsSrcArr": [
+                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/AL15-100T+RFL1000.jpg",
+                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/Schema_AL15-100T+RFL1000.png"
+                    ],
+                    "altText": "Станок лазерной резки труб AL15_100T+RFL1000",
+                    "link": ""
                 }
             ]
         },
         {
             "id": 2,
+            "categoryName": "multigas-cutting-machine",
             "name": "Станки мультигазовой резки",
+            "imgSrc": "/assets/product-category-img/multigas-cutting-machine.png",
+            "path": "category/multigas-cutting-machine?id=2",
             "enable": true,
             "description": "",
-            "subCategory": [
+            "products": [
                 {
                     "id": 1,
-                    "name": "first subcategory",
-                    "enable": true,
-                    "products": [
-                        {
-                            "id": 1,
-                            "name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
-                            " img": "product_1.png",
-                            "altText": "",
-                            "link": ""
-                        }
-                    ]
+                    "name": "Станок лазерной резки труб AL15_100T+RFL1000, укомплектован волоконным лазером мощностью 1 кВт",
+                    "imgsSrcArr": [
+                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/AL15-100T+RFL1000.jpg",
+                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/Schema_AL15-100T+RFL1000.png"
+                    ],
+                    "altText": "Станок лазерной резки труб AL15_100T+RFL1000",
+                    "link": ""
                 }
             ]
         },
         {
             "id": 3,
+            "categoryName": "plasma-cutting-machines",
             "name": "Станки плазменной резки",
+            "imgSrc": "/assets/product-category-img/plasma-cutting-machine.png",
+            "path": "category/plasma-cutting-machines?id=3",
             "enable": true,
             "description": "",
-            "subCategory": [
+            "products": [
                 {
                     "id": 1,
-                    "name": "first subcategory",
-                    "enable": true,
-                    "products": [
-                        {
-                            "id": 1,
-                            "name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
-                            "img": "product_1.png",
-                            "altText": "",
-                            "link": ""
-                        }
-                    ]
+                    "name": "Станок лазерной резки труб AL15_100T+RFL1000, укомплектован волоконным лазером мощностью 1 кВт",
+                    "imgsSrcArr": [
+                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/AL15-100T+RFL1000.jpg",
+                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/Schema_AL15-100T+RFL1000.png"
+                    ],
+                    "altText": "Станок лазерной резки труб AL15_100T+RFL1000",
+                    "link": ""
                 }
             ]
         },
         {
-            " id": 4,
-            " name": "Преса гибочные",
+            "id": 4,
+            "categoryName": "bending-presses",
+            "name": "Преса гибочные",
+            "imgSrc": "/assets/product-category-img/bending-presses.png",
+            "path": "category/bending-presses?id=4",
             "enable": true,
             "description": "",
-            "subCategory": [
+            "products": [
                 {
                     "id": 1,
-                    " name": "first subcategory",
-                    "enable": true,
-                    "products": [
-                        {
-                            " id": 1,
-                            "name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
-                            "img": "product_1.png",
-                            "altText": "",
-                            "link": ""
-                        }
-                    ]
+                    "name": "Станок лазерной резки труб AL15_100T+RFL1000, укомплектован волоконным лазером мощностью 1 кВт",
+                    "imgsSrcArr": [
+                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/AL15-100T+RFL1000.jpg",
+                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/Schema_AL15-100T+RFL1000.png"
+                    ],
+                    "altText": "Станок лазерной резки труб AL15_100T+RFL1000",
+                    "link": ""
                 }
             ]
         },
         {
             "id": 5,
-            " name": "Станки фрезерные",
-            " enable": true,
+            "categoryName": "milling-machines",
+            "name": "Станки фрезерные",
+            "imgSrc": "/assets/product-category-img/milling-machines.png",
+            "path": "category/milling-machines?id=5",
+            "enable": true,
             "description": "",
-            "subCategory": [
+            "products": [
                 {
                     "id": 1,
-                    "name": "first subcategory",
-                    "enable": true,
-                    "products": [
-                        {
-                            "id": 1,
-                            "name": "Оптоволоконный станок лазерной резки металла RJ-3015 1500W",
-                            "img": "product_1.png",
-                            "altText": "",
-                            "link": ""
-                        }
-                    ]
+                    "name": "Станок лазерной резки труб AL15_100T+RFL1000, укомплектован волоконным лазером мощностью 1 кВт",
+                    "imgsSrcArr": [
+                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/AL15-100T+RFL1000.jpg",
+                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/Schema_AL15-100T+RFL1000.png"
+                    ],
+                    "altText": "Станок лазерной резки труб AL15_100T+RFL1000",
+                    "link": ""
                 }
             ]
         }

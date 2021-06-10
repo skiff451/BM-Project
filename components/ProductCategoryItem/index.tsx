@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { useRouter } from "next/router";
 import Image from "next/image";
 import styles from "./ProductCategory.module.scss";
 
@@ -14,21 +13,12 @@ export default function ProductCategory({
   path,
   imgSrc,
 }: ProductCategoryProps) {
-  const router = useRouter();
-  const { id } = router.query;
-
+  
   return (
     <Link href={path}>
       <a className={styles.item} href={path}>
         <div className={styles.card}>
-         
-            <Image
-              src={imgSrc}
-              alt="laser-cutting-machine"
-              width={800}
-              height={500}
-            />
-          
+          <Image src={imgSrc} alt="category" width={800} height={500} />
 
           <div className={styles["title-wrapper"]}>
             <h3 className={styles.title}>{title}</h3>
