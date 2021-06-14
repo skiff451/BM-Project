@@ -4,7 +4,7 @@ export default (req:any, res:any) => {
     
     console.log("RES",res);
 
-    const selectedProduct = products.items.filter((prod)=>prod.id===1)
+    const selectedProduct = products.items.filter((prod)=>prod.id==="1")
     
     
     
