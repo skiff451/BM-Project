@@ -37,4 +37,34 @@ interface IProducts {
   link: string;
 }
 
-interface IFullProductData {}
+interface IDesignFeature {
+  id: string;
+  featureName: string;
+  featureDescription: string;
+}
+
+interface ILaserMachineSpecification {
+  name: string;
+  laserSpecifications: {
+    name: string;
+    specifications: string[][];
+  };
+  technicalSpecifications: {
+    name: string;
+    specifications: string[][];
+  };
+}
+
+interface IFullProductData {
+  id: string;
+  name: string;
+  imgsSrcArr: string[];
+  altText: string;
+  fullProductData: {
+    fullName: string;
+    productDescription: string;
+    designFeatures: IDesignFeature[];
+    qualities: string[];
+    laserMachineSpecifications: ILaserMachineSpecification;
+  };
+}

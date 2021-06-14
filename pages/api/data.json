@@ -18,10 +18,10 @@
                         "/assets/products-imgs/Laser_AL15-100T+RFL1000/Schema_AL15-100T+RFL1000.png"
                     ],
                     "altText": "Станок лазерной резки труб AL15_100T+RFL1000",
-                    "link": ""
+                    "link": "laser-cutting-machine/1"
                 },
                 {
-                    "id": 1,
+                    "id": 2,
                     "name": "Станок лазерной резки труб AL15_100T+RFL1000",
                     "imgsSrcArr": [
                         "/assets/products-imgs/Laser_AL15-100T+RFL1000/AL15-100T+RFL1000.jpg",
@@ -31,47 +31,7 @@
                     "link": ""
                 },
                 {
-                    "id": 1,
-                    "name": "Станок лазерной резки труб AL15_100T+RFL1000",
-                    "imgsSrcArr": [
-                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/AL15-100T+RFL1000.jpg",
-                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/Schema_AL15-100T+RFL1000.png"
-                    ],
-                    "altText": "Станок лазерной резки труб AL15_100T+RFL1000",
-                    "link": ""
-                },
-                {
-                    "id": 1,
-                    "name": "Станок лазерной резки труб AL15_100T+RFL1000",
-                    "imgsSrcArr": [
-                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/AL15-100T+RFL1000.jpg",
-                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/Schema_AL15-100T+RFL1000.png"
-                    ],
-                    "altText": "Станок лазерной резки труб AL15_100T+RFL1000",
-                    "link": ""
-                },
-                {
-                    "id": 1,
-                    "name": "Станок лазерной резки труб AL15_100T+RFL1000",
-                    "imgsSrcArr": [
-                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/AL15-100T+RFL1000.jpg",
-                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/Schema_AL15-100T+RFL1000.png"
-                    ],
-                    "altText": "Станок лазерной резки труб AL15_100T+RFL1000",
-                    "link": ""
-                },
-                {
-                    "id": 1,
-                    "name": "Станок лазерной резки труб AL15_100T+RFL1000",
-                    "imgsSrcArr": [
-                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/AL15-100T+RFL1000.jpg",
-                        "/assets/products-imgs/Laser_AL15-100T+RFL1000/Schema_AL15-100T+RFL1000.png"
-                    ],
-                    "altText": "Станок лазерной резки труб AL15_100T+RFL1000",
-                    "link": ""
-                },
-                {
-                    "id": 1,
+                    "id": 3,
                     "name": "Станок лазерной резки труб AL15_100T+RFL1000",
                     "imgsSrcArr": [
                         "/assets/products-imgs/Laser_AL15-100T+RFL1000/AL15-100T+RFL1000.jpg",

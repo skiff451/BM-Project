@@ -34,7 +34,7 @@ export default function ConsultForm({ imgSrc }: IConsultFormProps) {
   }
 
   return (
-    <div className={styles.container}>
+    // <div className={styles.container}>
       <div className={styles.group}>
         <ContactForm
           title="Нужна консультация?"
@@ -49,6 +49,6 @@ export default function ConsultForm({ imgSrc }: IConsultFormProps) {
           <Image src={imgSrc} alt="consultPicture" width={844} height={539} />
         )}
       </div>
-    </div>
+    // </div>
   );
 }

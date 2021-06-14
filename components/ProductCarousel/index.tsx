@@ -5,6 +5,7 @@ import {
   ButtonBack,
   ButtonNext,
 } from "pure-react-carousel";
+import "pure-react-carousel/dist/react-carousel.es.css";
 import { useEffect, useState } from "react";
 
 import ProductItem from "../ProductItem";
@@ -59,7 +60,7 @@ export default function ProductCarousel({ products }: ProductCarouselProps) {
   const slides = products.map((item) => {
     return (
       <Slide key={item.id} className="slide" index={0}>
-        <ProductItem imgName={item.img} name={item.name} altText="" />
+        <ProductItem imgSrc={item.img} name={item.name} altText="" />
       </Slide>
     );
   });

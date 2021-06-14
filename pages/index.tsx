@@ -4,58 +4,25 @@ import Promo from "../components/Promo";
 import Category from "../components/Category";
 import WhyUs from "../components/WhyUs";
 import ConsultForm from "../components/ConsultForm";
-
 import PopularProducts from "../components/PopularProducts";
 import CallButton from "../components/CallButton";
 
-export default function Home() {
+import data from "../pages/api/data.json";
+import CustomHead from "../components/CustomHead";
+
+interface IHomeProps {
+  categories: ICategory[];
+}
+
+export default function Home({ categories }: IHomeProps) {
   return (
     <>
-      <Head>
-        <title>MetalCut</title>
-        <link rel="icon" href="/favicon.ico" />
-        <meta
-          name="viewport"
-          content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no"
-        ></meta>
-        <meta charSet="utf-8" />
-        <meta
-          name="google-site-verification"
-          content="Y0yL7YaTBuU7T1xrHe-zjHaVePWsrIt7KIQUMPNjKrk"
-        />
-
-        <meta
-          name="keywords"
-          content="станки, станки плазменной резки, станки лазерной резки, 
-          станки мультигазовой резки, фрезерные станки, преса гибочные, ЧПУ,
-          высокое качество станков, промышленные станки"
-        />
-
-        <meta
-          name="description"
-          content="станки, станки плазменной резки, станки лазерной резки, 
-          станки мультигазовой резки, фрезерные станки, преса гибочные, ЧПУ,
-          высокое качество станков, промышленные станки,
-          Мы лучшая компания которая занимается продажей станков лазерной, мультигазовой, плазменной резки
-          "
-        />
-        <link rel="apple-touch-icon" href="/apple-ico.png"></link>
-        {/* <script>
-          window.ga=window.ga||function(){(ga.q = ga.q || []).push(arguments)}
-          ;ga.l=+new Date; ga('create', 'UA-XXXXX-Y', 'auto'); ga('send',
-          'pageview');
-        </script> */}
-        <script
-          async
-          src="https://www.google-analytics.com/analytics.js"
-        ></script>
-      </Head>
-
+      <CustomHead />
       <MainLayout>
         <Promo />
         <WhyUs />
-        <Category />
-        <ConsultForm imgSrc="/assets/consult-form-imgs/consult_1.png"/>
+        <Category categoriesData={categories} />
+        <ConsultForm imgSrc="/assets/consult-form-imgs/consult_1.png" />
         {/* <PopularProducts /> */}
         <CallButton tel="+380667528540" />
       </MainLayout>
@@ -63,4 +30,20 @@ export default function Home() {
   );
 }
 
+export async function getStaticProps() {
+  const categories = data.category.map((item) => {
+    if (item.enable) {
+      return {
+        id: item.id,
+        name: item.name,
+        imgSrc: item.imgSrc,
+        path: item.path,
+        description: item.description,
+      };
+    }
+  });
 
+  return {
+    props: { categories },
+  };
+}

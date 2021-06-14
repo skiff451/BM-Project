@@ -1,0 +1,30 @@
+.slider {
+  margin: 10px;
+  position: relative;
+  width: 530px;
+  height: 370px;
+}
+
+%btn-styles {
+  position: absolute;
+  top: 50%;
+  background: transparent;
+  
+  border: none;
+  &:active,
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.left-btn {
+  @extend %btn-styles;
+  left: 0px;
+}
+.right-btn {
+  @extend %btn-styles;
+  right: 0px;
+}

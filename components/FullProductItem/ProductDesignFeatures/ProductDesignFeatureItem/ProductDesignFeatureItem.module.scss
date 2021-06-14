@@ -1,0 +1,86 @@
+.card {
+  p{
+    margin: 0;
+  }
+  width: 250px;
+  height: 210px;
+  perspective: 1000px;
+
+  .inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 2px 4px 20px 2px rgba(206, 206, 206, 0.25);
+    border-radius: 10px;
+  }
+
+  &:hover .inner {
+    // transform: rotateY(180deg);
+    cursor: pointer;
+  }
+
+  
+}
+
+.flip{
+  transform: rotateY(180deg);
+}
+
+.front,
+.back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.front {
+}
+
+.back {
+  transform: rotateY(180deg);
+  overflow-y: auto;
+
+  &::-webkit-scrollbar {
+    width: 5px;
+  }
+
+  &::-webkit-scrollbar-track {
+    background: rgba(206, 206, 206, 0.25);
+    width: 1px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: #ffbfb3;
+  }
+
+  &::-webkit-scrollbar-thumb:hover {
+    background: #ff5432;
+  }
+}
+
+.dash {
+  display: inline-block;
+  margin: 40px 0 0 30px;
+  width: 56px;
+  height: 4px;
+  border: 4px solid #ff5432;
+}
+
+.title {
+  font-size: 20px;
+  line-height: 24px;
+  text-align: center;
+  margin: 20%;
+}
+
+.description {
+  padding: 20px;
+  font-size: 14px;
+  line-height: 24px;
+  // text-align: justify;
+}

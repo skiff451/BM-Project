@@ -1,20 +1,23 @@
 import BlockWrapper from "../../components/BlockWrapper";
+import CallButton from "../../components/CallButton";
 import CatalogButton from "../../components/CatalogButton";
 import ConsultForm from "../../components/ConsultForm";
+import DynamicNavigation from "../../components/DynamicNavigation";
 import MainLayout from "../../components/MainLayout";
 import ProductsInCategory from "../../components/ProductsInCategory";
 import data from "../api/data.json";
-
-import styles from "./Category.module.scss"
+import styles from "./Category.module.scss";
 
 interface ICategoryProps {
   products: IProduct[];
+  dynamicRouts: string[];
   title: string;
 }
 
-export default function Category({ products, title }: ICategoryProps) {
+export default function Category({ products, title, dynamicRouts }: ICategoryProps) {
   return (
     <MainLayout>
+      <DynamicNavigation routs={dynamicRouts} />
       <BlockWrapper title={title}>
         <ProductsInCategory data={products} />
         <div className={styles["button-wrapper"]}>
@@ -24,6 +27,7 @@ export default function Category({ products, title }: ICategoryProps) {
       <div className={styles["consult-wrapper"]}>
         <ConsultForm imgSrc="/assets/consult-form-imgs/consult_2.png" />
       </div>
+      <CallButton tel="+380667528540" />
     </MainLayout>
   );
 }
@@ -45,10 +49,12 @@ export async function getStaticProps(context: any) {
   const category = data.category.filter(
     (item) => item.categoryName === context.params.categoryName
   )[0];
+
   return {
     props: {
       products: category.products,
       title: category.name,
+      dynamicRouts: [data.name, category.name],
     },
   };
 }

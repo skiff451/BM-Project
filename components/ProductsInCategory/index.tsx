@@ -8,7 +8,7 @@ interface IProductsInCategoryProps {
 function ProductsInCategory({ data }: IProductsInCategoryProps) {
   const products = data?.map(({ id, imgsSrcArr, altText, name, link }) => {
     return (
-      <div className={styles.item}>
+      <div className={styles.item} key={id}>
         <ProductItem
           key={id}
           imgSrc={imgsSrcArr[0]}
