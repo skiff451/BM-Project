@@ -15,7 +15,6 @@ interface IProductSliderProps {
 }
 
 function ProductSlider({ imgSrcArr }: IProductSliderProps) {
-  console.log(imgSrcArr);
   const slides = imgSrcArr.map((item, index) => {
     return (
       <Slide key={index} className="slide" index={0}>

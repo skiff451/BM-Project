@@ -14,6 +14,7 @@ import data from "../../api/laser-cutting-machine/products.json";
 import styles from "./FullProductData.module.scss";
 import ContactFormModal from "../../../components/ContactFormModal";
 import ProductDesignFeatures from "../../../components/FullProductItem/ProductDesignFeatures";
+import ProductQualities from "../../../components/FullProductItem/ProductQualities";
 
 interface IProductProps {
   dynamicRouts: string[];
@@ -50,6 +51,7 @@ function Product({ dynamicRouts, data }: IProductProps) {
           </div>
         </div>
         <ProductDesignFeatures featuresData={designFeatures} />
+        <ProductQualities qualitiesData={qualities} />
         <ConsultForm imgSrc="/assets/consult-form-imgs/consult_2.png" />
         <CallButton tel="+380667528540" />
       </MainLayout>
@@ -66,7 +68,6 @@ export function getStaticPaths() {
       id: id.toString(),
     },
   }));
-  console.log(paths);
   return {
     paths,
     fallback: false,

@@ -13,14 +13,14 @@ function DynamicNavigation({ routs }: IDynamicNavigationProps) {
   const navigation = routs.map((rout, index) => {
     if (index === 0) {
       return (
-        <>
-          <Link href={"/"} >
-            <a key={index}>
+        <span key={index}>
+          <Link href={"/"}>
+            <a>
               <span className={styles.active}>{rout}</span>
             </a>
           </Link>
           <span className={styles.arrow}>⟶</span>
-        </>
+        </span>
       );
     } else if (index === routs.length - 1) {
       return (
@@ -32,16 +32,15 @@ function DynamicNavigation({ routs }: IDynamicNavigationProps) {
       const paths = router.asPath.split("/");
       paths.pop();
       const prevPath = paths.join("/");
-      console.log(prevPath)
       return (
-        <>
-          <Link href={prevPath} >
-            <a key={index}>
+        <span key={index}>
+          <Link href={prevPath}>
+            <a>
               <span className={styles.active}>{rout}</span>
             </a>
           </Link>
           <span className={styles.arrow}>⟶</span>
-        </>
+        </span>
       );
     }
   });

@@ -19,8 +19,6 @@ export default function Category({ categoriesData }: ICategoryProps) {
     );
   });
 
-  console.log(categoryItems);
-
   return (
     <section className={styles["category-wrapper"]}>
       <BlockWrapper title="Наша продукция">
