@@ -66,9 +66,9 @@
                     "Отсутствие лазерных газов;",
                     "Простота в использовании;"
                 ],
-                "laserMachineSpecifications": {
-                    "name": "Технические характеристики лазерного станка AL15-100T- RFL1000",
-                    "laserSpecifications": {
+                "MachineSpecifications": [
+                    {
+                        "id": "1",
                         "name": " Технич.характеристики волоконного лазера RFL1000",
                         "specifications": [
                             [
@@ -109,7 +109,8 @@
                             ]
                         ]
                     },
-                    "technicalSpecifications": {
+                    {
+                        "id": "2",
                         "name": "Технические характеристики",
                         "specifications": [
                             [
@@ -158,7 +159,7 @@
                             ]
                         ]
                     }
-                }
+                ]
             }
         }
     ]

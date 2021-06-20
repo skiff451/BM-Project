@@ -1,20 +1,20 @@
-import React, { useState } from "react";
-import CallButton from "../../../components/CallButton";
-import CatalogButton from "../../../components/CatalogButton";
-import ConsultForm from "../../../components/ConsultForm";
-import CustomHead from "../../../components/CustomHead";
-import DynamicNavigation from "../../../components/DynamicNavigation";
-import MainLayout from "../../../components/MainLayout";
+import { useState } from "react";
 
+import CustomHead from "../../../components/CustomHead";
+import MainLayout from "../../../components/MainLayout";
+import CallButton from "../../../components/CallButton";
+import ConsultForm from "../../../components/ConsultForm";
+import DynamicNavigation from "../../../components/DynamicNavigation";
+import ContactFormModal from "../../../components/ContactFormModal";
+import ProductDesignFeatures from "../../../components/FullProductItem/ProductDesignFeatures";
+import ProductQualities from "../../../components/FullProductItem/ProductQualities";
 import ProductSlider from "../../../components/FullProductItem/ProductSlider";
 import ProductDescription from "../../../components/FullProductItem/ProductDescription";
+import ProductSpecifications from "../../../components/ProductSpecifications";
 
 import data from "../../api/laser-cutting-machine/products.json";
 
 import styles from "./FullProductData.module.scss";
-import ContactFormModal from "../../../components/ContactFormModal";
-import ProductDesignFeatures from "../../../components/FullProductItem/ProductDesignFeatures";
-import ProductQualities from "../../../components/FullProductItem/ProductQualities";
 
 interface IProductProps {
   dynamicRouts: string[];
@@ -29,7 +29,7 @@ function Product({ dynamicRouts, data }: IProductProps) {
     productDescription,
     designFeatures,
     qualities,
-    laserMachineSpecifications,
+    MachineSpecifications,
   } = fullProductData;
 
   const [openModal, setOpenModal] = useState(false);
@@ -52,7 +52,8 @@ function Product({ dynamicRouts, data }: IProductProps) {
         </div>
         <ProductDesignFeatures featuresData={designFeatures} />
         <ProductQualities qualitiesData={qualities} />
-        <ConsultForm imgSrc="/assets/consult-form-imgs/consult_2.png" />
+        <ProductSpecifications specificationsData={MachineSpecifications} />
+        
         <CallButton tel="+380667528540" />
       </MainLayout>
     </>

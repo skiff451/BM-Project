@@ -1,0 +1,36 @@
+@import "../../../../styles/colors.scss";
+
+.cell {
+  padding: 10px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid $details-text;
+  font-size: 14px;
+
+  &:nth-child(even) {
+    background-color: rgba(0, 91, 150, 0.04);
+  }
+
+  .definition,
+  .value {
+    padding: 0 10px;
+  }
+
+  .delimiter {
+    height: 60%;
+    border-right: 1px solid $details-text;
+  }
+
+  .definition {
+    width: 75%;
+  }
+
+  .value {
+    width: 25%;
+    text-align: right;
+    color: #626262;
+  }
+}

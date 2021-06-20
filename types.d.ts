@@ -43,16 +43,10 @@ interface IDesignFeature {
   featureDescription: string;
 }
 
-interface ILaserMachineSpecification {
+interface IMachineSpecification {
+  id: string;
   name: string;
-  laserSpecifications: {
-    name: string;
-    specifications: string[][];
-  };
-  technicalSpecifications: {
-    name: string;
-    specifications: string[][];
-  };
+  specifications: string[][];
 }
 
 interface IFullProductData {
@@ -65,6 +59,6 @@ interface IFullProductData {
     productDescription: string;
     designFeatures: IDesignFeature[];
     qualities: string[];
-    laserMachineSpecifications: ILaserMachineSpecification;
+    MachineSpecifications: IMachineSpecification[];
   };
 }
