@@ -61,5 +61,10 @@ interface IFullProductData {
     designFeatures: IDesignFeature[];
     qualities: string[];
     MachineSpecifications: IMachineSpecification[];
+    CuttingModes: {
+      title: string;
+      modesData: string[][];
+      description: string[];
+    };
   };
 }

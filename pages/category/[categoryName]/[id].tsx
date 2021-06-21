@@ -1,4 +1,4 @@
-import { useState } from "react";
+import React, { useState } from "react";
 
 import CustomHead from "../../../components/CustomHead";
 import MainLayout from "../../../components/MainLayout";
@@ -15,6 +15,7 @@ import ProductSpecifications from "../../../components/ProductSpecifications";
 import data from "../../api/laser-cutting-machine/products.json";
 
 import styles from "./FullProductData.module.scss";
+import CuttingModesTable from "../../../components/CuttingModesTable";
 
 interface IProductProps {
   dynamicRouts: string[];
@@ -30,6 +31,7 @@ function Product({ dynamicRouts, data }: IProductProps) {
     designFeatures,
     qualities,
     MachineSpecifications,
+    CuttingModes,
   } = fullProductData;
 
   const [openModal, setOpenModal] = useState(false);
@@ -53,7 +55,12 @@ function Product({ dynamicRouts, data }: IProductProps) {
         <ProductDesignFeatures featuresData={designFeatures} />
         <ProductQualities qualitiesData={qualities} />
         <ProductSpecifications specificationsData={MachineSpecifications} />
-        
+        <CuttingModesTable
+          cuttingModesData={CuttingModes.modesData}
+          title={CuttingModes.title}
+          description={CuttingModes.description}
+        />
+        <ConsultForm imgSrc="/assets/consult-form-imgs/consult_1.png" />
         <CallButton tel="+380667528540" />
       </MainLayout>
     </>
