@@ -46,6 +46,7 @@ interface IDesignFeature {
 interface IMachineSpecification {
   id: string;
   name: string;
+  description: string;
   specifications: string[][];
 }
 

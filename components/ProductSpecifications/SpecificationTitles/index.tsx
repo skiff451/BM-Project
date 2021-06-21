@@ -5,7 +5,7 @@ import styles from "./SpecificationTitles.module.scss";
 
 interface SpecificationTitlesProps {
   specificationsData: IMachineSpecification[];
-  getCurrentSpecification: (currentSpecification: string[][]) => void;
+  getCurrentSpecification: (currentSpecification: IMachineSpecification) => void;
 }
 
 function SpecificationTitles({
@@ -14,7 +14,7 @@ function SpecificationTitles({
 }: SpecificationTitlesProps) {
   
   const [activeSpecification, setActiveSpecification] = useState(
-    specificationsData[0].specifications
+    specificationsData[0]
   );
 
   useEffect(() => {
@@ -52,7 +52,7 @@ function SpecificationTitles({
               (item) => item.id === specificationItem.id
             );
             if (curSpecification !== undefined) {
-              setActiveSpecification(curSpecification.specifications);
+              setActiveSpecification(curSpecification);
             }
           }}
         >

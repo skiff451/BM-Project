@@ -11,19 +11,24 @@ interface ProductSpecificationsProps {
 function ProductSpecifications({
   specificationsData,
 }: ProductSpecificationsProps) {
-  const [specification, getSpecification] = useState([
-    ["", ""], // default case to create table before get data
-  ]);
+  const [specificationItem, getSpecificationItem] =
+    useState<IMachineSpecification>();
 
   return (
     <BlockWrapper title="Технические характеристики ">
       <SpecificationTitles
         specificationsData={specificationsData}
         getCurrentSpecification={(currentSpecification) => {
-          getSpecification(currentSpecification);
+          getSpecificationItem(currentSpecification);
         }}
       />
-      <SpecificationTable tableData={specification} />
+
+      <SpecificationTable
+        tableData={
+          specificationItem ? specificationItem.specifications : [["", ""]]
+        }
+      />
+      <p className={styles.description}>{specificationItem?.description}</p>
     </BlockWrapper>
   );
 }
