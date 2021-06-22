@@ -2,6 +2,12 @@
 
 .product-description-wrapper {
   display: flex;
-   justify-content: space-between;
+  justify-content: space-between;
 }
 
+.additional-info-blocks {
+  margin: 100px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+}

@@ -11,6 +11,7 @@ import ProductQualities from "../../../components/FullProductItem/ProductQualiti
 import ProductSlider from "../../../components/FullProductItem/ProductSlider";
 import ProductDescription from "../../../components/FullProductItem/ProductDescription";
 import ProductSpecifications from "../../../components/ProductSpecifications";
+import InfoBlock from "../../../components/InfoBlock";
 
 import data from "../../api/laser-cutting-machine/products.json";
 
@@ -32,6 +33,8 @@ function Product({ dynamicRouts, data }: IProductProps) {
     qualities,
     MachineSpecifications,
     CuttingModes,
+    basicCompleteSet,
+    options,
   } = fullProductData;
 
   const [openModal, setOpenModal] = useState(false);
@@ -61,6 +64,17 @@ function Product({ dynamicRouts, data }: IProductProps) {
           description={CuttingModes.description}
         />
         <ConsultForm imgSrc="/assets/consult-form-imgs/consult_1.png" />
+
+        <div className={styles.container}>
+          <div className={styles["additional-info-blocks"]}>
+            <InfoBlock
+              infoList={basicCompleteSet.completeSetItems}
+              title={basicCompleteSet.title}
+            />
+            <InfoBlock infoList={options.optionsItems} title={options.title} />
+          </div>
+        </div>
+
         <CallButton tel="+380667528540" />
       </MainLayout>
     </>

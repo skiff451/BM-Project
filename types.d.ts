@@ -66,5 +66,13 @@ interface IFullProductData {
       modesData: string[][];
       description: string[];
     };
+    basicCompleteSet: {
+      title: string;
+      completeSetItems: string[];
+    };
+    options: {
+      title: string;
+      optionsItems: string[];
+    };
   };
 }

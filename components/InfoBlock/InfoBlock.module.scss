@@ -1,0 +1,42 @@
+.info-block {
+  border: 1px solid rgba(0, 91, 150, 0.1);
+  box-sizing: border-box;
+  border-radius: 6px;
+  width: 100%;
+  max-width: 625px;
+  padding: 5%;
+
+  &:nth-child(even){
+      margin-left: 10px;
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 36px;
+  }
+
+  .list {
+    padding-left: 0;
+    list-style: none;
+
+    .list-item {
+      position: relative;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: 0.01em;
+      margin: 24px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: calc(50% - 4px);
+        left: -20px;
+        border-radius: 50%;
+        width: 8px;
+        height: 8px;
+        background-color: #005b96;
+      }
+    }
+  }
+}
