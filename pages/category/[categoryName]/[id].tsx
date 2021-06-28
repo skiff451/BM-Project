@@ -1,6 +1,5 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
-import CustomHead from "../../../components/CustomHead";
 import MainLayout from "../../../components/MainLayout";
 import CallButton from "../../../components/CallButton";
 import ConsultForm from "../../../components/ConsultForm";
@@ -41,7 +40,6 @@ function Product({ dynamicRouts, data }: IProductProps) {
 
   return (
     <>
-      <CustomHead />
       <MainLayout>
         <DynamicNavigation routs={dynamicRouts} />
         <div className={styles.container}>

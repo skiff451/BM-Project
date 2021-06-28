@@ -1,4 +1,3 @@
-import Head from "next/head";
 import MainLayout from "../components/MainLayout";
 import Promo from "../components/Promo";
 import Category from "../components/Category";
@@ -8,7 +7,7 @@ import PopularProducts from "../components/PopularProducts";
 import CallButton from "../components/CallButton";
 
 import data from "../pages/api/data.json";
-import CustomHead from "../components/CustomHead";
+
 
 interface IHomeProps {
   categories: ICategory[];
@@ -17,7 +16,6 @@ interface IHomeProps {
 export default function Home({ categories }: IHomeProps) {
   return (
     <>
-      <CustomHead />
       <MainLayout>
         <Promo />
         <WhyUs />

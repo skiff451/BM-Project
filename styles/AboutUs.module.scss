@@ -1,0 +1,10 @@
+@import "./colors.scss";
+
+.wrapper {
+  width: 100%;
+  background: linear-gradient(71.33deg, #001a2b 5.12%, #005b96 99.41%);
+  padding-top: 2.472vw;
+  * {
+    color: $white;
+  }
+}

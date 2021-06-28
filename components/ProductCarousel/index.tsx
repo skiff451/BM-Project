@@ -57,9 +57,9 @@ export default function ProductCarousel({ products }: ProductCarouselProps) {
     });
   }
 
-  const slides = products.map((item) => {
+  const slides = products.map((item, index) => {
     return (
-      <Slide key={item.id} className="slide" index={0}>
+      <Slide key={item.id} className="slide" index={index}>
         <ProductItem imgSrc={item.img} name={item.name} altText="" />
       </Slide>
     );
