@@ -1,4 +1,4 @@
-import React, { Dispatch, SetStateAction } from "react";
+import  { Dispatch, SetStateAction } from "react";
 import Image from "next/image";
 import {
   CarouselProvider,
@@ -13,6 +13,8 @@ import PromoContent from "./PromoContent";
 
 import "pure-react-carousel/dist/react-carousel.es.css";
 import styles from "./PromoCarousel.module.scss";
+
+
 
 interface CarouselProps{
   openModal: Dispatch<SetStateAction<boolean>>
@@ -34,10 +36,12 @@ export default function Carousel({openModal}:CarouselProps) {
         <Slide className="slide" index={0}>
           <Image
             src="/assets/promo-carousel-imgs/Background_1.png"
+            
             alt=""
             width={1440}
             height={1000}
             layout="responsive"
+            placeholder="blur"
           />
           <PromoContent>
             <h1 className={styles.title}>Станки лазерной резки</h1>
@@ -54,6 +58,7 @@ export default function Carousel({openModal}:CarouselProps) {
             width={1440}
             height={1000}
             layout="responsive"
+            placeholder="blur"
           />
           <PromoContent>
             <h1 className={styles.title}>Станки плазменой резки </h1>
@@ -70,6 +75,7 @@ export default function Carousel({openModal}:CarouselProps) {
             width={1440}
             height={1000}
             layout="responsive"
+            placeholder="blur"
           />
           <PromoContent>
             <h1 className={styles.title}>Станки мультигазовой резки </h1>
