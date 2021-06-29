@@ -1,4 +1,4 @@
-import  { Dispatch, SetStateAction } from "react";
+import { Dispatch, SetStateAction } from "react";
 import Image from "next/image";
 import {
   CarouselProvider,
@@ -14,13 +14,11 @@ import PromoContent from "./PromoContent";
 import "pure-react-carousel/dist/react-carousel.es.css";
 import styles from "./PromoCarousel.module.scss";
 
-
-
-interface CarouselProps{
-  openModal: Dispatch<SetStateAction<boolean>>
+interface CarouselProps {
+  openModal: Dispatch<SetStateAction<boolean>>;
 }
 
-export default function Carousel({openModal}:CarouselProps) {
+export default function Carousel({ openModal }: CarouselProps) {
   return (
     <CarouselProvider
       naturalSlideWidth={1440}
@@ -36,12 +34,12 @@ export default function Carousel({openModal}:CarouselProps) {
         <Slide className="slide" index={0}>
           <Image
             src="/assets/promo-carousel-imgs/Background_1.png"
-            
             alt=""
             width={1440}
             height={1000}
             layout="responsive"
             placeholder="blur"
+            blurDataURL="/assets/promo-carousel-imgs/Background_1.png"
           />
           <PromoContent>
             <h1 className={styles.title}>Станки лазерной резки</h1>
@@ -59,6 +57,7 @@ export default function Carousel({openModal}:CarouselProps) {
             height={1000}
             layout="responsive"
             placeholder="blur"
+            blurDataURL="/assets/promo-carousel-imgs/Background_2.png"
           />
           <PromoContent>
             <h1 className={styles.title}>Станки плазменой резки </h1>
@@ -76,6 +75,7 @@ export default function Carousel({openModal}:CarouselProps) {
             height={1000}
             layout="responsive"
             placeholder="blur"
+            blurDataURL="/assets/promo-carousel-imgs/Background_3.png"
           />
           <PromoContent>
             <h1 className={styles.title}>Станки мультигазовой резки </h1>
@@ -92,6 +92,8 @@ export default function Carousel({openModal}:CarouselProps) {
             width={1440}
             height={1000}
             layout="responsive"
+            placeholder="blur"
+            blurDataURL="/assets/promo-carousel-imgs/Background_4.png"
           />
           <PromoContent>
             <h1 className={styles.title}>Станки фрезерные </h1>
@@ -108,6 +110,8 @@ export default function Carousel({openModal}:CarouselProps) {
             width={1440}
             height={1000}
             layout="responsive"
+            placeholder="blur"
+            blurDataURL="/assets/promo-carousel-imgs/Background_5.png"
           />
           <PromoContent>
             <h1 className={styles.title}>Преса гибочные </h1>
@@ -138,7 +142,9 @@ export default function Carousel({openModal}:CarouselProps) {
           <div className={styles.order}>
             <Button
               responsive={true}
-              onClick={()=>{openModal(true)}}
+              onClick={() => {
+                openModal(true);
+              }}
             >
               Заказать звонок
             </Button>
