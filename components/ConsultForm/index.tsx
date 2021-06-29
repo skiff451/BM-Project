@@ -34,21 +34,26 @@ export default function ConsultForm({ imgSrc }: IConsultFormProps) {
   }
 
   return (
-    // <div className={styles.container}>
-      <div className={styles.group}>
-        <ContactForm
-          title="Нужна консультация?"
-          subtitle="Оставьте свои данные и мы перезвоним"
-          version="dark"
-          centerPos={false}
-          style={{
-            form: styles["contact-form"],
-          }}
+    <div className={styles.group}>
+      <ContactForm
+        title="Нужна консультация?"
+        subtitle="Оставьте свои данные и мы перезвоним"
+        version="dark"
+        centerPos={false}
+        style={{
+          form: styles["contact-form"],
+        }}
+      />
+      {isImgRender && (
+        <Image
+          src={imgSrc}
+          alt="consultPicture"
+          width={844}
+          height={539}
+          placeholder="blur"
+          blurDataURL="/assets/consult-form-imgs/consult_blur.jpg"
         />
-        {isImgRender && (
-          <Image src={imgSrc} alt="consultPicture" width={844} height={539} />
-        )}
-      </div>
-    // </div>
+      )}
+    </div>
   );
 }

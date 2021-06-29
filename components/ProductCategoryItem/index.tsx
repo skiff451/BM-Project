@@ -18,7 +18,7 @@ export default function ProductCategory({
     <Link href={path}>
       <a className={styles.item} href={path}>
         <div className={styles.card}>
-          <Image src={imgSrc} alt="category" width={800} height={500} placeholder="blur" blurDataURL={imgSrc}/> 
+          <Image src={imgSrc} alt="category" width={800} height={500} placeholder="blur" blurDataURL="/assets/product-category-img/category-blur.jpg"/> 
 
           <div className={styles["title-wrapper"]}>
             <h3 className={styles.title}>{title}</h3>

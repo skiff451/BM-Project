@@ -39,7 +39,7 @@ export default function Carousel({ openModal }: CarouselProps) {
             height={1000}
             layout="responsive"
             placeholder="blur"
-            blurDataURL="/assets/promo-carousel-imgs/Background_1.png"
+            blurDataURL="/assets/promo-carousel-imgs/blur/Background_1_blur.jpg"
           />
           <PromoContent>
             <h1 className={styles.title}>Станки лазерной резки</h1>
@@ -57,7 +57,7 @@ export default function Carousel({ openModal }: CarouselProps) {
             height={1000}
             layout="responsive"
             placeholder="blur"
-            blurDataURL="/assets/promo-carousel-imgs/Background_2.png"
+            blurDataURL="/assets/promo-carousel-imgs/blur/Background_1_blur.jpg"
           />
           <PromoContent>
             <h1 className={styles.title}>Станки плазменой резки </h1>
@@ -75,7 +75,7 @@ export default function Carousel({ openModal }: CarouselProps) {
             height={1000}
             layout="responsive"
             placeholder="blur"
-            blurDataURL="/assets/promo-carousel-imgs/Background_3.png"
+            blurDataURL="/assets/promo-carousel-imgs/blur/Background_1_blur.jpg"
           />
           <PromoContent>
             <h1 className={styles.title}>Станки мультигазовой резки </h1>
@@ -93,7 +93,7 @@ export default function Carousel({ openModal }: CarouselProps) {
             height={1000}
             layout="responsive"
             placeholder="blur"
-            blurDataURL="/assets/promo-carousel-imgs/Background_4.png"
+            blurDataURL="/assets/promo-carousel-imgs/blur/Background_1_blur.jpg"
           />
           <PromoContent>
             <h1 className={styles.title}>Станки фрезерные </h1>
@@ -111,7 +111,7 @@ export default function Carousel({ openModal }: CarouselProps) {
             height={1000}
             layout="responsive"
             placeholder="blur"
-            blurDataURL="/assets/promo-carousel-imgs/Background_5.png"
+            blurDataURL="/assets/promo-carousel-imgs/blur/Background_1_blur.jpg"
           />
           <PromoContent>
             <h1 className={styles.title}>Преса гибочные </h1>

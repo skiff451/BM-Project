@@ -8,12 +8,12 @@ import CallButton from "../components/CallButton";
 
 import data from "../pages/api/data.json";
 
-
 interface IHomeProps {
   categories: ICategory[];
 }
 
 export default function Home({ categories }: IHomeProps) {
+  
   return (
     <>
       <MainLayout>
@@ -22,7 +22,6 @@ export default function Home({ categories }: IHomeProps) {
         <Category categoriesData={categories} />
         <ConsultForm imgSrc="/assets/consult-form-imgs/consult_1.png" />
         {/* <PopularProducts /> */}
-        <CallButton tel="+380667528540" />
       </MainLayout>
     </>
   );

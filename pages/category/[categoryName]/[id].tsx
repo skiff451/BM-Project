@@ -72,8 +72,6 @@ function Product({ dynamicRouts, data }: IProductProps) {
             <InfoBlock infoList={options.optionsItems} title={options.title} />
           </div>
         </div>
-
-        <CallButton tel="+380667528540" />
       </MainLayout>
     </>
   );

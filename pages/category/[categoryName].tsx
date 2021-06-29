@@ -14,7 +14,11 @@ interface ICategoryProps {
   title: string;
 }
 
-export default function Category({ products, title, dynamicRouts }: ICategoryProps) {
+export default function Category({
+  products,
+  title,
+  dynamicRouts,
+}: ICategoryProps) {
   return (
     <MainLayout>
       <DynamicNavigation routs={dynamicRouts} />
@@ -27,7 +31,6 @@ export default function Category({ products, title, dynamicRouts }: ICategoryPro
       <div className={styles["consult-wrapper"]}>
         <ConsultForm imgSrc="/assets/consult-form-imgs/consult_2.png" />
       </div>
-      <CallButton tel="+380667528540" />
     </MainLayout>
   );
 }
