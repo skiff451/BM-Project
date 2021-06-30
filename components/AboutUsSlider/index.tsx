@@ -26,7 +26,13 @@ function AboutUsSlider({ slidesData }: AboutUsSliderProps) {
     return (
       <Slide key={index} className="slide" index={index}>
         <div className={styles["slide-wrapper"]}>
-          <Image src={slide.imgSrc} width={843} height={458} />
+          <Image
+            src={slide.imgSrc}
+            width={843}
+            height={458}
+            placeholder="blur"
+            blurDataURL="/assets/about-us-imgs/about-us-blur.jpg"
+          />
           <div className={styles["text-wrapper"]}>
             <h4>{slide.title}</h4>
             <p>{slide.description}</p>
