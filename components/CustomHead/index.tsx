@@ -1,4 +1,4 @@
-import Head from "next/head"
+import Head from "next/head";
 
 function CustomHead() {
   return (
@@ -12,9 +12,8 @@ function CustomHead() {
       <meta charSet="utf-8" />
       <meta
         name="google-site-verification"
-        content="Y0yL7YaTBuU7T1xrHe-zjHaVePWsrIt7KIQUMPNjKrk"
+        content="XNAMKWWPJim8izDd5WMFx9uWq70xK66WAEo3-7unlUY"
       />
-
       <meta
         name="keywords"
         content="станки, станки плазменной резки, станки лазерной резки, 
