@@ -26,6 +26,8 @@ export default function ProductItem({
             width={298}
             height={214}
             layout="responsive"
+            placeholder="blur"
+            blurDataURL="/assets/products-imgs/product-blur.jpg"
           />
           <div className={styles.wrapper}>
             <p className={styles["product-name"]}>{name}</p>

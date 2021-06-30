@@ -18,7 +18,13 @@ function ProductSlider({ imgSrcArr }: IProductSliderProps) {
   const slides = imgSrcArr.map((item, index) => {
     return (
       <Slide key={index} className="slide" index={0}>
-        <Image src={item} width={630} height={470} />
+        <Image
+          src={item}
+          width={630}
+          height={470}
+          placeholder="blur"
+          blurDataURL="/assets/products-imgs/product-blur.jpg"
+        />
       </Slide>
     );
   });
