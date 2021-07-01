@@ -3,7 +3,7 @@ import Promo from "../components/Promo";
 import Category from "../components/Category";
 import WhyUs from "../components/WhyUs";
 import ConsultForm from "../components/ConsultForm";
-import PopularProducts from "../components/PopularProducts";
+
 
 import data from "../pages/api/data.json";
 

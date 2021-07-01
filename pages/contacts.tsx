@@ -3,7 +3,6 @@ import MainLayout from "../components/MainLayout";
 
 import styles from "../styles/Contacts.module.scss";
 
-
 function Contacts() {
   return (
     <MainLayout>
