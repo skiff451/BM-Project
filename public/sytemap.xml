@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://www.metalcut.com.ua/</loc>
+	<lastmod>2021-07-01T12:28:02+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.metalcut.com.ua/about-us</loc>
+	<lastmod>2021-07-01T12:28:03+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.metalcut.com.ua/products</loc>
+	<lastmod>2021-07-01T12:28:07+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.metalcut.com.ua/contacts</loc>
+	<lastmod>2021-07-01T12:28:06+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.metalcut.com.ua/gallery</loc>
+	<lastmod>2021-07-01T12:28:10+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.metalcut.com.ua/machine-tools</loc>
+	<lastmod>2021-07-01T12:28:07+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://www.metalcut.com.ua/category/laser-cutting-machine?id=1</loc>
+	<lastmod>2021-07-01T12:28:08+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.metalcut.com.ua/category/multigas-cutting-machine?id=2</loc>
+	<lastmod>2021-07-01T12:28:08+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.metalcut.com.ua/category/plasma-cutting-machines?id=3</loc>
+	<lastmod>2021-07-01T12:28:09+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.metalcut.com.ua/category/bending-presses?id=4</loc>
+	<lastmod>2021-07-01T12:28:10+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.metalcut.com.ua/category/milling-machines?id=5</loc>
+	<lastmod>2021-07-01T12:28:10+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://www.metalcut.com.ua/category/laser-cutting-machine/1</loc>
+	<lastmod>2021-07-01T12:28:12+01:00</lastmod>
+	<priority>0.6</priority>
+</url>
+<url>
+	<loc>https://www.metalcut.com.ua/category/laser-cutting-machine</loc>
+	<lastmod>2021-07-01T12:28:13+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+</urlset>

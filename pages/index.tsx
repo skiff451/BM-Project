@@ -16,6 +16,12 @@ export default function Home({ categories }: IHomeProps) {
   return (
     <>
       <MainLayout>
+      <img
+              src={`https://maps.googleapis.com/maps/api/staticmap?&markers=size:mid%7Ccolor:red%7C48.4739688,32.1979463&zoom=15&size=734x307&key=AIzaSyB8f5gZ04auwtMWFzI0sOFrlRJ1gjqXHTg`}
+              alt="map"
+              width="734"
+              height="307"
+            />
         <Promo />
         <WhyUs />
         <Category categoriesData={categories} />
