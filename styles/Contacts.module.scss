@@ -1,5 +1,45 @@
-.wrapper{
-    .contacts-wrapper{
-        
+.wrapper {
+  display: flex;
+  align-items: stretch;
+  padding: 10px 0 100px 0;
+  .contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-bottom: 20px;
+    .contact-item {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      width: 90%;
+      margin: 10px 0;
+      img {
+        margin-right: 10px;
+      }
     }
+  }
+  .map-reference {
+    &:hover {
+      opacity: 0.8;
+    }
+    img {
+      width: 50.972vw;
+      height: 21.319vw;
+      border: 1px solid gray;
+      border-radius: 4px;
+      background-color: rgba(112, 119, 133, 0.507);
+    }
+  }
+}
+
+@media (max-width: 960px) {
+  .wrapper {
+    flex-direction: column;
+    .map-reference {
+      img {
+        width: 60.972vw;
+        height: 31.319vw;
+      }
+    }
+  }
 }
