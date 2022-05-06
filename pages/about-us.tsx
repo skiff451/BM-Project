@@ -24,7 +24,7 @@ function AboutUs({ data }: AboutUsProps) {
   return (
     <MainLayout>
       <div className={styles["wrapper"]}>
-        <BlockWrapper title="О компании">
+        <BlockWrapper title="О компании ">
           <AboutUsSlider slidesData={data.slidesData} />
         </BlockWrapper>
       </div>
